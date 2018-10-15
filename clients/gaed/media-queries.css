@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+ul#menu {
+	display:none;
+}
+
+.problem-col {
+	min-height:587px;
+}
+
+.subscription-input {
+    max-width: 370px;
+}
+
+.solution-col {
+    height: 545px;
+}
+
+}
+
+@media (max-width: 991px) {
+
+.problem-col {
+	min-height:416px;
+	padding:30px;
+}
+
+.media-col {
+	width:33.333%;
+}
+
+.solution-col {
+    height: 378px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+body {font-size:13px;}
+h1 {font-size:30px;}
+h2 {font-size:24px;}
+
+.team-info h3 {font-size:16px;}
+
+#logo {
+	width:89px;
+	height:71px;
+	margin-top:13px;
+}
+
+#home {
+	padding-top:30%;
+}
+
+.home-container {
+    width:100%;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.privatesale {
+	left:80px;
+}
+
+.publicsale {
+	right:0px;
+}
+	
+.problem-col {
+	min-height:auto;
+	padding:30px;
+}
+
+.media-col {
+	width:50%;
+}
+
+.subscription-input {
+    max-width: 500px;
+}
+
+.subscribe-btn {
+	float:none;
+	margin-left:0px;
+}
+
+.solution-col {
+    height: auto;
+}
+	
+.linkedin {
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    padding-top: 8px;
+}
+
+}
+
+@media (max-width: 480px) {	
+
+.token-title {
+	width:100%;
+}
+
+
+
+}
+

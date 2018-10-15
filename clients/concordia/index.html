@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Concordia - Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap & Jquery -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="timeline.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="animate.css" rel="stylesheet" type="text/css" />
+<link href="magnific-popup.css" rel="stylesheet">
+<link href="sidemenu.css" rel="stylesheet">
+<link href="flexslider.css" rel="stylesheet" type="text/css" />
+<link href="jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="media-queries.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+<script src="js/jquery.magnific-popup.min.js"></script>	
+
+<style>
+
+.white-popup {
+	position: relative;
+	background: #fff;
+	width: auto;
+	max-width: 945px;
+	margin: 25px auto;
+	padding: 50px 25px;
+	border-radius:10px;
+}
+	
+#login, #signup {
+	max-width: 360px;
+	padding:30px;
+	text-align: center;
+}
+	
+#login .btn, #signup .btn {
+	width: 100%;
+}
+	
+#invest {
+	max-width:555px;
+    padding:30px;
+	text-align: center;
+}
+
+.mfp-bg {
+	background: #333;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #999999;
+}
+.mfp-close {
+	font-size: 36px;
+}
+	
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+	background:transparent;
+}
+
+
+</style>	
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+</script>
+
+ <script>
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+
+<body>
+
+<!------------ Navigation start ------------>
+<div id="header">
+	<div class="container" style="text-align: center;">
+	  <a href="index.html"><div id="logo" style="float:none; display: inline-block;"></div></a>
+  </div>
+</div>
+<!------------ Navigation end ------------>
+
+<!------------ Home banner start ------------>
+<div id="home" class="simple-home">
+  <div class="container">
+  <div class="row">
+	<div class="col-md-6 col-sm-4 v-pad"></div>
+	<div class="col-md-6 col-sm-8 v-pad">
+	  <h1>Make it happen.</h1>
+      <h3 class="bold">Starting a token sale and need funds?</h3>
+      <h3 class="bold">Looking for a project to support?</h3>
+	  <h3>Join Concordia, the leading Token Sale funding platform.</h3>
+	  <h3>Designed by entrepreneurs for entrepreneurs.</h3>
+	  <br><br>
+	  <a href="#" target="_blank"><img src="img/download-ios.png" alt=""></a> &nbsp;&nbsp;&nbsp;<a href="#" target="_blank"><img src="img/download-android.png" alt=""></a>
+	</div>
+  </div>
+  </div>
+</div>
+<!------------ Home banner end ------------>
+
+<section style="text-align:center;">
+  <div class="container">
+    <h1>Every little bit counts</h1>
+    <div class="h-line" style="display:inline-block;"></div>
+    <h3>We want to make it easy for anyone to realise their dreams!</h3>
+	<br>
+    <p>At Concordia, anyone can support the projects which they are passionate about.</p>
+	<p>We believe in social proofing of projects and offer startups and token sale issuers an efficient platform to raise the  critical funds which they require.</p>
+  </div>
+</section>
+
+<div class="home-col simple-home-col pattern-blue">
+  <div class="home-col-content simple-home-col-content">
+    <div class="home-col-img simple-home-col-img"><div class="investor-img"><img src="img/img-investor.jpg" alt=""></div></div>
+    <div class="home-col-text simple-home-col-text">
+      <h3 class="bold">INVESTOR</h3>
+      <div class="h-line h-line-small" style="background:#fff;"></div>
+      <h4>Concordia Ventures protects your funds. We will only disburse your investment to the project owners after we receive their tokens on your behalf and the tokens are confirmed listed on one exchange. Otherwise, we will refund you the funds, less gas fee.
+Fund from as low as 0.5 Ethereum.</h4>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<div class="home-col simple-home-col pattern-darkblue">
+  <div class="home-col-content simple-home-col-content">
+    <div class="home-col-img simple-home-col-img"><div class="investor-img"><img src="img/img-fundraise.jpg" alt=""></div></div>
+    <div class="home-col-text simple-home-col-text">
+      <h3 class="bold">FUNDRAISER</h3>
+      <div class="h-line h-line-small" style="background:#fff;"></div>
+      <h4>Just launched a Token Sale Event? Talk to us today and access Concordia's thousands of investors. Every investor has passed our KYC process saving project owners expensive time and resource to screen each incoming investment.</h4>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+<!------------ Contact start ------------>
+<section class="pattern-grey">
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-6 col-sm-6 v-pad simple-home-contact" style="text-align: center;">
+		<div class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><br><br>
+		<h3>180 ABC Road #08-16<br>Singapore 123456</h3>
+		<br><br><br>
+		<div class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div><br><br>
+		<h3><a href="mailto:hello@concordiaventures.com" style="color:#24abd8;">hello@concordiaventures.com</a></h3>
+		<br><br>
+		<ul class="social">
+		  <li><a href="" class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		  <li><a href="" class="social-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		  <li><a href="" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		  <li><a href="" class="social-icon"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+		</ul>
+	  </div> 
+	  <div class="col-md-6 col-sm-6 v-pad contact-form">
+		<h1>Send us a message</h1>
+		<br><br>
+		<input type="text" class="input-style" placeholder="Name *">
+        <br><br>
+		<input type="text" class="input-style" placeholder="Email *">
+        <br><br>
+		<input type="text" class="input-style" placeholder="Contact No. *">
+        <br><br>
+		<select class="input-style">
+		  <option>Describe your role *</option>  
+	      <option>I am an investor</option>
+		  <option>I am a token sale issuer looking to raise funds for my ICO</option>
+		  <option>I am an entrepreneur looking to raise funds for my startup</option>
+		  <option>Others</option>
+		</select>
+		<br><br>
+		<textarea class="input-style" placeholder="Message *"></textarea>
+		<div style="text-align: right; margin-top: 30px;"><button class="btn">Send Message</button></div>
+	  </div> 
+	</div>
+  </div>	
+</section>
+<!------------ Contact end ------------>
+	
+<div class="footer">
+  <div class="container">
+	<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	<br><br><br>
+	<p class="small-text">© 2018 Concordia Investment. All rights reserved.</p>
+  </div>	
+</div>
+	
+<!------------ Login & signup popup ------------>
+<div id="login" class="white-popup mfp-hide sans">
+  <h3 class="bold">Login</h3>
+  <br><br>
+  <a href="" class="btn facebook-btn small-btn"><i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;Log in with Facebook</a>
+  <br><br>
+  <a href="" class="btn google-btn small-btn"><i class="fa fa-google" aria-hidden="true"></i> &nbsp;&nbsp;Log in with Google</a>
+  <br><br><br>
+  <p>Or sign in with email</p>
+  <br><br>
+  <input type="text" class="input-style" placeholder="john.doe@email.com ">
+  <br><br>
+  <input type="text" class="input-style" placeholder="Password ">
+  <br><br>
+  <div style="float:left;"><input type="checkbox"> &nbsp;&nbsp;<span class="small-text">Remember me</span></div>
+  <div style="float: right; margin-top: 4px;"><a href=""><span class="small-text" style="color:#24abd8;">Forgot your password?</span></a></div>
+  <div style="clear: both;"></div>
+  <br><br>
+  <button type="submit" value="Submit" class="btn blue-btn small-btn">Log In</button>
+  <div style="width:100%; height:1px; background:#dddddd; margin-top:20px; margin-bottom: 10px"></div>
+  <p>Don’t have an account? <a href="#signup" style="color:#24abd8;" class="second-popup-link">Sign up here!</a></p>
+</div>
+
+<div id="signup" class="white-popup mfp-hide sans">
+  <h3 class="bold">Sign Up</h3>
+  <br><br>
+  <a href="" class="btn facebook-btn small-btn"><i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;Log in with Facebook</a>
+  <br><br>
+  <a href="" class="btn google-btn small-btn"><i class="fa fa-google" aria-hidden="true"></i> &nbsp;&nbsp;Log in with Google</a>
+  <br><br><br>
+  <p>Or sign up with email</p>
+  <br><br>
+  <input type="text" class="input-style" placeholder="Name ">
+  <br><br>
+  <input type="text" class="input-style" placeholder="Email ">
+  <br><br>
+  <input type="text" class="input-style" placeholder="Password ">
+  <br><br>
+  <table>
+    <tbody>
+	  <tr valign="top">
+        <td style="width:25px;"><input type="checkbox" value="value1" oninput="this.className = ''"></td>
+		<td><p class="small-text" style="text-align: left;">I would like to receive latest news & updates</p></td>
+      </tr>
+	  <tr valign="top">
+        <td style="width:25px;"><input type="checkbox" value="value2" oninput="this.className = ''"></td>
+		  <td><p class="small-text" style="text-align: left;">I have read and agree with the <a href="terms.html" target="_blank" style="color:#24abd8">Terms & Conditions</a> and <a href="privacy.html" target="_blank" style="color:#24abd8">Privacy Policy</a></p></td>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
+  <button type="submit" value="Submit" class="btn blue-btn small-btn">Sign Up</button>
+  <div style="width:100%; height:1px; background:#dddddd; margin-top:20px; margin-bottom: 10px"></div>
+  <p>Already have an account? <a href="#login" style="color:#24abd8;" class="first-popup-link">Sign in here!</a></p>
+</div>
+<!------------ Login & signup end ------------>
+	
+<!------------ Invest popup ------------>
+<div id="invest" class="white-popup mfp-hide sans">
+  <h2 class="bold" style="color:#24abd8;">Invest</h2>
+  <div class="h-line" style="display:inline-block;"></div>
+  <br><br>
+  I wish to buy &nbsp;<input type="text" class="input-style" style="width: 90px;" placeholder="10"> &nbsp;of Tokens for <span style="font-size: 17px; font-weight: 700;">1.888 BTC</span>
+  <br><br>
+  Payment method &nbsp;<select class="input-style" style="width:90px;"><option value="volvo">BTC</option><option value="saab">ETH</option></select>
+  <br><br><br>
+  <p>Your source Wallet Address:</p>
+  <input type="text" class="input-style" style="width: 100%">
+  <br><br><br>
+  <p class="bold">Please transfer the exact BTC to our Wallet Address:</p>
+  <input type="text" class="input-style wallet-address" value="8129389812989123" id="myInput" readonly="">
+  <button onclick="myFunction()" class="btn-copy"><i class="fa fa-link" aria-hidden="true"></i></button>
+  <div style="clear:both;"></div>
+  <br><br>
+  <p>Description here lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus leo neque, aliquet tristique erat tristique eget. Sed risus odio, tempus sed neque id, venenatis accumsan odio. Cras condimentum lacus ut felis hendrerit, vitae venenatis neque aliquam. Suspendisse ligula neque, suscipit a erat non.</p>
+  <br><br>
+  <button type="submit" value="Submit" class="btn blue-btn small-btn" style="width:100%;">Submit</button>
+</div>
+<!------------ Invest popup end ------------>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>	
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'fade',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 3500
+        });
+    });
+	
+      $(document).ready(function () {
+        $('.explore-slider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.explore-slider',
+			slideshowSpeed: 3500
+        });
+    });
+</script>
+	
+
+<!-- Add bxslider -->
+<script src="js/jquery.bxslider.js"></script>
+	
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider();
+  });
+</script>
+	
+<!-- Add magnifique popup --> 
+
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+	
+<script>
+$('.first-popup-link, .second-popup-link').magnificPopup({
+  closeBtnInside:true
+});	
+</script>
+
+<!-- Add video popup -->
+<script>
+    $(document).ready(function () {
+        $('.video-pop-up').magnificPopup({
+			type: 'iframe',
+		});
+
+		$('a.gallery').magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			},
+			image: {
+				titleSrc: 'title',
+				tError: 'The image could not be loaded.',
+			}
+		});
+		
+    });
+</script>
+
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>

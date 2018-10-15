@@ -1,0 +1,9 @@
+[24-Jan-2018 06:48:36 UTC] PHP Parse error:  syntax error, unexpected '@', expecting ',' or ')' in C:\home\novum.capital\wwwroot\mailer.php on line 79
+[24-Jan-2018 06:50:09 UTC] PHP Parse error:  syntax error, unexpected '@', expecting ',' or ')' in C:\home\novum.capital\wwwroot\mailer.php on line 79
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant ‘mail - assumed '‘mail' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant www - assumed 'www' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant novum - assumed 'novum' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant capital - assumed 'capital' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant vps - assumed 'vps' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant ezhostingserver - assumed 'ezhostingserver' in C:\home\novum.capital\wwwroot\mailer.php on line 15
+[01-Feb-2018 13:03:33 UTC] PHP Notice:  Use of undefined constant com’ - assumed 'com’' in C:\home\novum.capital\wwwroot\mailer.php on line 15

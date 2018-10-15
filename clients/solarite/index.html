@@ -1,0 +1,764 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Solarite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap & Jquery -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="timeline.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="animate.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="jquery.flipcountdown.css" />
+<link href="magnific-popup.css" rel="stylesheet">
+<link href="sidemenu.css" rel="stylesheet">
+<link href="flexslider.css" rel="stylesheet" type="text/css" />
+<link href="media-queries.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.flipcountdown.js"></script>
+<script src="https://use.typekit.net/bkt6ydm.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<style>
+
+.white-popup {
+	position: relative;
+	background: #fff;
+	width: auto;
+	max-width: 555px;
+	margin: 25px auto;
+	padding: 25px;
+}
+
+#participateform {
+	max-width: 420px !important;
+	background:#222222;
+}
+
+#participateform h3 {font-size:18px; font-weight:700;}
+
+#participateform .btn {
+	width: 100% !important;
+}
+
+.mfp-bg {
+	background: #333;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #333;
+}
+.mfp-close {
+	font-size: 36px;
+}
+
+
+</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+</script>
+
+ <script>
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+
+<body>
+
+<!------------ Navigation start ------------>
+<div id="header">
+  <div class="container"><a href="#home">
+    <div id="logo"></div>
+    </a>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#problem">Problems</a></li>
+      <li><a href="#solarite">Solarite</a></li>
+      <li><a href="#power">Proof of Power</a></li>
+      <li><a href="#ecosystem">Token Ecosystem</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#tokensale">Token Sale</a></li>
+      <li><a href="#funds">Use of Funds</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <a href="#home" onclick="closeSidebar(this)">Home</a>
+      <a href="#problem" onclick="closeSidebar(this)">Problem</a>
+      <a href="#solarite" onclick="closeSidebar(this)">Solarite</a>
+      <a href="#power" onclick="closeSidebar(this)">Proof of Power</a>
+      <a href="#ecosystem" onclick="closeSidebar(this)">Token Ecosystem</a>
+      <a href="#roadmap" onclick="closeSidebar(this)">Roadmap</a>
+      <a href="#team" onclick="closeSidebar(this)">Team</a>
+      <a href="#tokensale" onclick="closeSidebar(this)">Token Sale</a>
+      <a href="#funds" onclick="closeSidebar(this)">Use of Funds</a>
+      <a href="#contact" onclick="closeSidebar(this)">Contact</a>
+    </nav>
+  </div>
+</div>
+<!------------ Navigation end ------------>
+
+<!------------ Home banner start ------------>
+<div id="home">
+  <div class="background-wrap">
+    <video id="video-bg-elem" preload="auto" autoplay loop muted>
+      <source src="main-bg.mp4" type="video/mp4">
+      Video not supported </video>
+  </div>
+  <div class="content">
+    <div class="home-container">
+      <h1 class="wow fadeInUp">The First Truly Green,<br>Proof-of-Power Cryptocurrency</h1>
+      <br>
+      <br>
+      <ul class="home-btn">
+        <li class="wow fadeInLeft" data-wow-delay="0.9s"><a href="#" class="btn">Watch Video</a></li>
+        <li class="wow fadeInRight" data-wow-delay="0.9s"><a href="#" target="_blank" class="btn white-btn">Whitepaper</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!------------ Home banner end ------------>
+
+<!------------ Participate start ------------>
+<div class="part-col part-img wow fadeInLeft"></div>
+<div class="part-col" data-wow-delay="0.3s">
+  <h1 class="wow fadeInDown">Buy Now</h1>
+  <br>
+  <h2 class="wow fadeInDown">Fill in your information below to participate in our tokensale.</h2>
+  <br>
+  <div class="part-container wow fadeInDown" data-wow-delay="0.6s">
+    <a href="" class="btn " style="width:100%;">Buy Now</a>
+  </div>
+</div>
+<div style="clear:both;"></div>
+<!------------ Participate end ------------>
+
+<!------------ Problems start ------------>
+<section id="problem">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-4 col-sm-12 v-pad wow fadeInLeft">
+      <div class="sec-title ">
+        <h1>Problems with<br><span style="font-weight:700;">Conventional</span><br>Solar Panels</h1>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 v-pad wow fadeInUp" data-wow-delay="0.3s">
+      <table>
+        <tr>
+        <td><div class="problem-num">1</div></td>
+        <td style="padding-left:15px;"><h2>High temperatures cause low efficiency</h2></td>
+        </tr>
+      </table>
+      <br><br>
+      <ul>
+        <li><p>By using concentrated sunlight, it produces high temperature on the solar module.</p></li>
+        <li><p>Eg, LCPV: Temperature could reach as high as 150* celsius, which results in solar cell conversion efficiency to reduce tremendously. 1 degree raise in temperature on the solar cell reduces conversion efficiency by 0.5%.</p></li>
+        <li><p>Increased effectiveness but low efficiency.</p></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-12 v-pad wow fadeInUp" data-wow-delay="0.6s">
+      <table>
+        <tr>
+        <td><div class="problem-num">2</div></td>
+        <td style="padding-left:15px;"><h2>Low efficiency results in long breakeven period
+</h2></td>
+        </tr>
+      </table>
+      <br><br>
+      <ul>
+        <li><p>Solar panels have long breakeven period of 4 to 10 years, with efficiency in the range of 8 to 17 percent (comparatively low).</p></li>
+        <li><p>Solar panels have low reliability in harsh environment, hence shortening usable lifespan of solar module.</p></li>
+        <li><p>Less reliable solar module produces negative net clean energy, resulting in more harm than good for the environment.</p></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+<!------------ Problems end ------------>
+
+<!------------ Solarite start ------------>
+<div class="solution-img wow fadeInRight"></div>
+<div id="solarite">
+  <h1 class="wow fadeInUp"><b>High Efficiency</b> and <b>effectiveness</b> patented solar solution.</h1>
+  <br>
+  <h2 class="wow fadeInUp">Solar energy solution that achieves the high efficiency despite high temperatures.</h2>
+  <br>
+  <ul class="wow fadeInUp">
+    <li><p>Increases solar to electricity conversion efficiency by between 25% to 32%.</p></li>
+    <li><p>Enables a shorter investment breakeven period of 3 years.</p></li>
+    <li><p>Low Concentrated Photovoltaic (LCPV) concentrates sunlight at a lower concentration ratio of less than 100x using single or dual axis solar tracker with c-silicon or other solar cell.</p></li>
+    <li><p>Patented Solution: filed patent for Solarite – High efficiency Solar Module – Patent No. GB1708275.1, on 24th May 2017.</p></li>
+  </ul>
+  <br><br>
+  <h3 class="wow fadeInUp">CONVENTIONAL SOLAR PANELS VS SOLARITE</h3>
+  <br><br><br>
+  <table style="width:100%;" class="wow fadeInUp" data-wow-delay="0.3s">
+    <tr>
+      <th></th>
+      <th>Conventional PV</th>
+      <th>Solarite</th>
+    </tr>
+    <tr>
+      <td>Conversion Efficiency</td>
+      <td style="color:#999;">8-17%</td>
+      <td style="color:#999;">25 - 32%</td>
+    </tr>
+    <tr>
+      <td>Innestment break even period</td>
+      <td style="color:#999;">4-10 Years</td>
+      <td style="color:#999;">3.5 Years</td>
+    </tr>
+    <tr>
+      <td>Short life span</td>
+      <td style="color:#999;">7-15 years</td>
+      <td style="color:#999;">20 - 25 years</td>
+    </tr>
+  </table>
+</div>
+<div style="clear:both;"></div>
+<!------------ Solarite end ------------>
+
+<!------------ Proof of Power start ------------>
+<section id="power">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInUp" >
+        <h1>Solarite Blockchain:<br><b>Proof-of-Power</b> (PoP)</h1>
+        <br>
+        <h2>Solarite blockchain employs the new Proof-of-Power (PoP) concept: Rewarding people who produce energy!</h2>
+        <br>
+        <p>The first solar farm built by Solarite Technologies will be the basis for the Solarite Blockchain. Subsequent solar farms and installations built by Solarite Technologies will leverage on the blockchain for transaction verifications, which will result in a massive use case for its TAPP tokens. Private solar farms will be able to leverage on the Solarite blockchain to participate in its solar energy ecosystem.</p>
+        <br>
+        <p>This Proof-of-Power (PoP) concept uses less electricity to mine Solarite TAPP coins in comparison to mining bitcoins. The excess electricity generated by Solarite’s solar farm will be sold back to the grid and generate value for token holders.</p>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad">
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Proof of Power end ------------>
+
+<!------------ Token ecosystem start ------------>
+<div id="ecosystem" class="wow fadeIn" data-wow-delay="0.6s">
+  <img src="img/graphic-ecosystem.png" alt="" class="wow fadeIn" data-wow-delay="1.2s">
+</div>
+<div class="ecosystem-col wow fadeInLeft" data-wow-delay="0.3s">
+  <img src="img/graphic-tapp-marketplace.png" alt="">
+  <br><br><br>
+  <h3>TAPP MARKETPLACE</h3>
+  <br>
+  <p>Solar farms built and managed by Solarite Technologies will be supplying electricity transmission directly or through a network of retailers in exchange for the receipt of TAPP coins. Facilitating trading liquidity on exchanges with the support of other cryptocurrencies.</p>
+</div>
+<div class="ecosystem-col wow fadeInLeft" style="background:#fff;">
+  <img src="img/graphic-tapp-coin-holders.png" alt="">
+  <br><br><br>
+  <h3>TAPP COIN HOLDERS</h3>
+  <br>
+  <p>Crypto-savvy consumers who stake their TAPP coins with Solarite
+</p>
+</div>
+<div class="ecosystem-col wow fadeInRight">
+  <img src="img/graphic-consumers.png" alt="">
+  <br><br><br>
+  <h3>CONSUMERS</h3>
+  <br>
+  <p>Day-to-day electricity consumers who wish to purchase the electricity generated by Solarite’s solar farms and attain cost savings in the electricity bills through its breakthrough solar energy solutions.</p>
+</div>
+<div class="ecosystem-col wow fadeInRight" data-wow-delay="0.3s" style="background:#fff;">
+  <img src="img/graphic-resellers.png" alt="">
+  <br><br><br>
+  <h3>RESELLERS</h3>
+  <br>
+  <p>Third party resellers of Solarite’s electricity supply who can bypass potential transmission hurdles between Solarite and end consumers due to geographical or regulatory factors. This includes private solar farm owners leveraging on the Solarite Proof-of-Power Blockchain.</p>
+</div>
+<div style="clear:both;"></div>
+<!------------ Token ecosystem end ------------>
+
+<!------------ Roadmap start ------------>
+<section id="roadmap">
+  <div class="container">
+    <h1 class="wow fadeInUp">Roadmap</h1>
+    <br><br><br><br><br>
+    <div class="flex-container wow fadeInUp" data-wow-delay="0.3s">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q1</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Private Placements,<br>
+Prototype Development,<br>
+Tokens Issued</p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q2</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Equity Fund Raising <br>
+Events Round A<br></p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q3</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Token Sale,<br>
+Prototype Testing<br></p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q4</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Research and Development on PoP</p>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+          <li>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q1</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Private Placements,<br>
+Prototype Development,<br>
+Tokens Issued</p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q2</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Equity Fund Raising <br>
+Events Round A<br></p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q3</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Token Sale,<br>
+Prototype Testing<br></p>
+            </div>
+            <div class="roadmap-col">
+              <h2><b>2018</b> Q4</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Research and Development on PoP</p>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-container2 wow fadeInUp">
+      <div class="mobile-slider">
+        <ul class="slides">
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q1</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Private Placements,<br>
+Prototype Development,<br>
+Tokens Issued</p>
+            </div>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q2</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Equity Fund Raising <br>
+Events Round A<br></p>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q3</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Token Sale,<br>
+Prototype Testing<br></p>
+            </div>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q4</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Research and Development on PoP</p>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q1</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Private Placements,<br>
+Prototype Development,<br>
+Tokens Issued</p>
+            </div>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q2</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Equity Fund Raising <br>
+Events Round A<br></p>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q3</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Token Sale,<br>
+Prototype Testing<br></p>
+            </div>
+            <div class="roadmap-col roadmap-mobile">
+              <h2><b>2018</b> Q4</h2>
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-line"></div>
+              <p>Research and Development on PoP</p>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Roadmap end ------------>
+
+<!------------ Team start ------------>
+<section id="team" style="background:#f5f5f5;">
+  <div class="container">
+    <div class="sec-title"><h1>The Solarite <b>Team</b></h1></div>   
+    <br><br><br>
+    <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <a href="#julie" class="open-popup-link"><div class="team-circle"><div class="team-img"><img src="img/team-terence.jpg" alt=""></div></div></a>
+        <br>
+        <p style="color:#666666; font-weight:700;">TERRENCE ONG</p>
+        <p>CEO, Founder</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+		<a href="#julie" class="open-popup-link"><div class="team-circle"><div class="team-img"><img src="img/team-julie.jpg" alt=""></div></div></a>
+        <br>
+        <p style="color:#666666; font-weight:700;">JULIE ONG</p>
+        <p>Finance/HR, Co-founder</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-andy.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">ANDY ANG</p>
+        <p>BD and Technical Director</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-joven.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">JOVAN CHIEW</p>
+        <p>Head of Security Software Technology</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-chautran.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">CHAU TRAN</p>
+        <p>Head of Advance Automation and Robotics</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-terence.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">CALVING ONG</p>
+        <p>Business Development Manager</p>
+      </div>
+    </div>
+    <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-terence.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">TERRENCE ONG</p>
+        <p>CEO, Founder</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-julie.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">JULIE ONG</p>
+        <p>Finance/HR, Co-founder</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-andy.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">ANDY ANG</p>
+        <p>BD and Technical Director</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-joven.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">JOVAN CHIEW</p>
+        <p>Head of Security Software Technology</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-chautran.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">CHAU TRAN</p>
+        <p>Head of Advance Automation and Robotics</p>
+      </div>
+      <div class="col-md-2 vol-sm-4 col-xs-6 v-pad">
+        <div class="team-circle"><div class="team-img"><img src="img/team-terence.jpg" alt=""></div></div>
+        <br>
+        <p style="color:#666666; font-weight:700;">CALVING ONG</p>
+        <p>Business Development Manager</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Team end ------------>
+
+<!------------ Tokensale start ------------>
+<div id="tokensale" class="wow fadeInUp">
+  <h1>Token <b>Sale</b></h1>
+  <div style="width:60px; height:3px; background:#333; margin-top:20px; margin-bottom:45px;"></div>
+  <p>To incentivise the team, Solarite will be keeping 40% of all TAPP Tokens generated, or a maximum of 224,000,000 TAPP Tokens, whichever is lower, generated at the end of the Token Generation Event (TGE).</p>
+  <br>
+  <p>Tokens not sold in the sale pool will be burnt. The total supply will be capped at 560,000,000 TAPP Tokens after the token sale. TAPP will not be minable until the proof of power private blockchain is live, of which we will be perform a token swap for all TAPP Token holders.</p>
+  <br>
+  <p>Participation in the Public Sale shall be limited to natural persons, and each wallet which has been cleared pursuant to Know-Your-Customer (KYC) checks. KYC checks include proof of identity and residence.</p>
+</div>
+<div class="token-table">
+  <table style="width:100%;" class="wow fadeInUp">
+    <tr>
+      <td class="token-title">Token Name</td>
+      <td class="token-info">TAPP TOKENS (TAPP)</td>
+    </tr>
+    <tr>
+      <td class="token-title">TOKEN TYPE</td>
+      <td class="token-info">ERC20</td>
+    </tr>
+    <tr>
+      <td class="token-title">TOKEN SUPPLY</td>
+      <td class="token-info">560,000,000 TAPP TOKENS</td>
+    </tr>
+    <tr>
+      <td class="token-title">TOKEN FOR SALE</td>
+      <td class="token-info">336,000,000 TAPP TOKENS</td>
+    </tr>
+    <tr>
+      <td class="token-title">CURRENCY ACCEPTED</td>
+      <td class="token-info">ETH / USD</td>
+    </tr>
+    <tr>
+      <td class="token-title">PRE-SALE DATES</td>
+      <td class="token-info">2018 Q3</td>
+    </tr>
+    <tr>
+      <td class="token-title">PRE-SALE BONUS</td>
+      <td class="token-info">15%</td>
+    </tr>
+    <tr>
+      <td class="token-title">SALE DATES</td>
+      <td class="token-info">2018 Q3</td>
+    </tr>
+    <tr>
+      <td class="token-title">SALE RATES</td>
+      <td class="token-info">1 TAPP = USD$0.0859</td>
+    </tr>
+  </table>
+</div>
+<div style="clear:both;"></div>
+<!------------ Tokensale end ------------>
+
+<!------------ Usage of Funds start ------------>
+<div id="funds" class="wow fadeInRight">
+  <h1><b>Usage</b> of Funds</h1>
+  <div style="width:60px; height:3px; background:#333; margin-top:20px; margin-bottom:45px;"></div>
+  <p>Majority of the proceeds will be used for the building of a utility scale solar farm for the proof of power concept. Equipped with smart meters and micro grid infrastructure leveraging on blockchain technology.</p>
+  <br>
+  <p>Solarite proprietary Proof of Power blockchain will be developed as we raise the funds from this TGE, once this private blockchain is live, we will be conducting a token swap for all TAPP Token holders to convert their ERC20 token to the Proof of Power blockchain.</p>
+</div>
+<div class="funds-img wow fadeInLeft"><img src="img/graphic-usage-of-funds.png" alt=""></div>
+<!------------ Usage of Funds end ------------>
+
+<!------------ Contact start ------------>
+<div id="contact">
+  <h1 class="wow fadeInUp"><b>Contact</b> Us</h1>
+  <div class="wow fadeInUp" style="width:60px; height:3px; background:#000; margin-top:20px; margin-bottom:45px; display: inline-block;"></div>
+  <h2 class="wow fadeInUp" style="text-transform: uppercase; color:#999;">3 Gambar Prescent<br>Nordcom One, #08-01,<br>Singapore 757088</h2>
+  <p class="wow fadeInUp"><a href="" style="color:#fff;">View on Google Maps</a></p>
+  <br>
+  <h2 class="wow fadeInUp"><a href="mailto:investors@solarite-technology.com" style="color:#fff;" target="_blank">investors@solarite-technology.com</a></h2>
+</div>
+<div class="contact-form ">
+  <div class="form-container wow fadeInUp">
+      <input type='text' class="input-style" name='FNAME' id='participate_name'  placeholder="YOUR NAME" /><br><br>
+      <input type='text' class="input-style" name='FNAME' id='participate_name'  placeholder="EMAIL" /><br><br>
+      <input type='text' class="input-style" name='FNAME' id='participate_name'  placeholder="CONTACT NUMBER" /><br><br>
+      <textarea class="input-style" placeholder="MESSAGE"></textarea><br><br><br>
+      <a href="" class="btn blk-btn" style="width:100%;">Send Message</a>
+  </div>
+</div>
+<div style="clear:both;"></div>
+<!------------ Contact end ------------>
+
+<section style="background:#007eff; padding:60px 0;">
+  <div class="container">
+    <ul class="social">
+        <li><a href="#" target="_blank"><div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+        <li><a href="#" target="_blank"><div class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+        <li><a href="#" target="_blank"><div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+        <li><a href="#" target="_blank"><div class="social-icon"><i class="fa fa-telegram" aria-hidden="true"></i></div></a></li>
+        <li><a href="#" target="_blank"><div class="social-icon"><i class="fa fa-medium" aria-hidden="true"></i></div></a></li>
+    </ul>
+    <div class="copyright">© 2018 Solarite. ALl Rights Reserved.</div>
+    <div style="clear: both;"></div>
+  </div>
+</section>
+	
+<!---------- Team popup start------------>
+
+<div id="julie" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h1><b>Julie</b> Ong</h1>
+    <h2><i class="fa fa-linkedin-square" aria-hidden="true"></i> Finance/HR, Co-founder</h2>
+  </div>
+  <br><br>
+  <div style="padding-left:25px;">
+  <p>Her background is business management , Julie has many years of experience in production planning in the semiconductor and disk drive industry.</p>  
+  <br>
+  <p>A serial entrepreneur for more than 15 years . Her expertise is in the area of chemical and ultra violet related products mainly in the optical media industry.
+</p>
+  <br>
+  <p>She also co-founded 7 Corporation Pte Ltd , Alpha Digital Holdings , Laser Logic (International) PL & Solarite Ltd.</p>
+  </div>
+</div>
+
+<!---------- Team popup end------------>
+
+<!-- Add animated text -->
+<script src="js/wow.js"></script>
+
+<script>
+new WOW().init();
+</script>
+
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("#header")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("#logo")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("ul#menu")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("ul#menu li a")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("ul#menu li a:hover")[addRemClass]('bgChange');
+});
+
+</script>
+
+<!-- Add smooth transition menu --> 
+<script>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+</script> 
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 5000
+        });
+    });
+	
+	$(document).ready(function () {
+        $('.mobile-slider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.mobile-slider',
+			slideshowSpeed: 5000
+        });
+    });
+	
+</script>
+
+<!-- Add magnifique popup --> 
+
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+.flex-direction-nav {display: none;}
+
+.home-content {padding-left:15px;}
+
+.home-col-content {
+  width:440px;
+}
+
+.home-col-img {
+  width:180px;
+  height:180px;
+  margin-right:30px;
+}
+
+.home-col-text {	
+  width:230px;
+}
+
+.explore-btn {width:100%;}
+	
+.simple-home-col {
+  width:100%;
+  float:none;
+  height:auto;	
+  padding:50px 0
+}
+	
+.simple-home-col-content {
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;	
+}
+
+.simple-home-col-img {
+  width:20%;
+  height:auto;
+  margin:0;
+  padding-right:10px;
+}
+
+.simple-home-col-text {	
+  width:80%;
+  padding-left:15px;
+}
+
+}
+
+@media (max-width: 991px) {
+
+ul#menu {
+    font-size: 13px;
+	margin-top: 24px;
+}	
+
+ul#menu li {
+    margin-left: 25px;
+}
+
+.home-col {
+  width:100%;
+  float:none;
+  height:auto;	
+  padding:50px 0
+}
+
+.home-col-content {
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;	
+}
+
+.home-col-img {
+  width:20%;
+  height:auto;
+  margin:0;
+  padding-right:10px;
+}
+
+.home-col-text {	
+  width:80%;
+  padding-left:15px;
+}
+	
+.explore-btn {width:50%;}
+.explore-page .explore-btn {width:100%;}
+	
+.whitepaper-btn .btn{	
+    letter-spacing: 0px;
+}		
+
+.tokensale-mainvideo {
+	max-width:750px;
+	width:100%;
+}
+	
+.getfunded-col {
+	width: 50%;
+}
+	
+.dashboard-menu {
+	text-align: center;
+}
+	
+.simple-home {
+	padding-top:16%;
+}
+
+}
+
+
+@media (max-width: 768px) {	
+
+ul#menu {
+    display:none;
+}		
+
+ul.login {display: none;}	
+
+.home-col-img {
+  width:30%;
+}
+
+.home-col-text {	
+  width:70%;
+}
+	
+.explore-page .explore-btn {width:50%;}
+
+.inner-bg-container {width:100%; padding-left:15px; padding-right:15px;}
+
+.whitepaper-btn{	
+    text-align: center;
+}	
+
+.whitepaper-btn .btn{	
+    letter-spacing: 1px;
+}
+
+.img-team {
+	margin:0 auto;
+}
+	
+.tokensale-info {padding-top:60px;}
+	
+.sub-header ul{
+    display: none;
+}
+	
+.dropdown {display:inline-block;}
+
+#regForm {
+  width: 100%;
+}
+	
+.regform-title {
+	padding-left: 0px;
+}
+	
+.linkedin {
+   width:35%;
+}
+
+.linkedin-input {
+	width:65%;
+}
+	
+.social-media {
+	width:15%;
+	float:left;
+}
+
+.social-icon {
+	margin-left: 0px;
+}
+
+.social-url {
+	width: 30%;
+    float: left;
+    padding-top: 10px;
+}
+
+.social-input {
+	float:left;
+	width: 55%;
+}
+	
+.wallet-address {
+	width: 90% !important;
+}
+
+.btn-copy {
+    width: 10%;
+}
+
+.getfunded-col {
+	width: 100%;
+	float:none;
+}
+
+.getfunded-bg {padding:50px 30px; height: auto;}
+	
+ul.dashboard-tab li {
+    margin: 5px;
+}	
+
+.stats-col {
+	width:100%;
+	height:auto;
+	min-height: auto;
+	float: none;
+	box-sizing: border-box;
+	padding:40px 0;
+}
+
+.stats-subcol {
+    height: 55px;
+    padding-top: 18px;
+}
+	
+.dashboard-chart {
+	width:100%;
+}
+	
+.manage-token p {line-height: 1.2;}
+	
+.simple-home {
+	padding-top:28%;
+}
+	
+}
+
+@media (max-width: 500px) {	
+
+h1 {font-size:36px;}
+h2 {font-size:26px;}
+h3 {font-size:18px;}
+h4 {font-size:14px;}
+		
+
+#home h1 {font-size:36px;}
+
+#regForm p{
+  font-size: 11px;
+}
+
+.regform-title {
+	padding-right: 15px;
+}
+	
+.tab-content {
+  padding:15px;
+}	
+	
+.edit-content {
+  padding-top:0px;
+}
+
+.edit-title {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.regform-row {font-size: 11px;}
+	
+.small-input {width:100px !important;}
+
+.social-media {
+    width: 12%;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+	
+.social-icon i {
+    font-size: 13px;
+}
+	
+.social-url {
+    width: 35%;
+}
+	
+.social-input {
+    width: 53%;
+}
+	
+.tab-content th, .tab-content td {
+    font-size: 11px;
+}
+	
+.simple-home img {max-width:150px;}
+	
+ul.social li {margin:10px;}	
+	
+.simple-home-contact .social-icon {
+	width:50px;
+	height: 50px;
+	border-radius: 25px;
+	padding-top: 17px;
+}
+
+.simple-home-contact .social-icon i {font-size: 18px;}
+	
+}
+
+@media (max-width: 480px) {	
+
+.login-s a {
+    margin-left: 23px;
+}
+
+.signup-s a {
+    margin-left: 23px;
+    margin-top: 0px;
+}
+
+}

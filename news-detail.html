@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novum Capital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap & Jquery -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="sidemenu.css" rel="stylesheet" type="text/css" />
+<link href="media-queries.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+</script>
+</head>
+
+<body>
+
+<!------------ Navigation start ------------>
+
+<div id="header">
+  <div class="container"> <span class="logo"><a href="index.php">
+    <div id="logo"></div>
+    </a></span>
+    <ul id="menu">
+      <li><a href="http://novum.capital/#featured">home</a></li>
+      <li><a href="http://novum.capital/#about">about</a></li>
+      <li><a href="http://novum.capital/#services">services</a></li>
+      <li><a href="http://novum.capital/#novumedge">the novum edge</a></li>
+      <li><a href="http://novum.capital/#clients">clients</a></li>
+      <li><a href="http://novum.capital/#news">news</a></li>
+      <li><a href="http://novum.capital/#careers">careers</a></li>
+      <li><a href="http://novum.capital/#contact">contact</a></li>
+    </ul>
+    <nav> <a href="" id="menuToggle" title="show menu"> <span class="navClosed"></span> </a> <a href="http://novum.capital/#featured" id="featuredToggle" >Home</a> <a href="http://novum.capital/#about" id="aboutToggle">about</a> <a href="http://novum.capital/#services" id="servicesToggle">services</a> <a href="http://novum.capital/#novumedge" id="novumedgeToggle">the novum edge</a> <a href="http://novum.capital/#clients" id="clientsToggle">clients</a> <a href="http://novum.capital/#news" id="newsToggle">news</a> <a href="http://novum.capital/#careers" id="careersToggle">careers</a> <a href="http://novum.capital/#contact" id="contactToggle">contact</a> </nav>
+  </div>
+</div>
+
+<!------------ Navigation end ------------> 
+
+<!------------ News detail start ------------> 
+
+<section id="news-page">
+  <div class="news-page-content">
+    <div class="container">
+      <div class="news-detail">
+        <span class="news-date">Oct 15, 2017</span>
+        <br>
+        <br>
+        <br>
+        <h1>Novum Capital welcomes leading crypto legal professional, Nizam Ismail, to its team</h1>
+        <div class="h-line-container">
+          <div class="h-line"></div>
+          <div class="h-line"></div>
+          <div class="h-line"></div>
+          <div style="clear:both;"></div>
+       </div>
+        <img src="img/team-nizam.jpg" alt="">
+        <br>
+        <br>
+        <br>
+        <p>Novum Capital is proud to welcome Mr Nizam Ismail to the team. Mr Ismail is a Co-Founder of RHT Compliance solutions and previously was a Deputy Director and Head of the Market Conduct Policy Division of the Monetary Authority of Singapore. Mr Ismail's skillset complements the existing founding team members and will provide immense value add to Novum Capital's clients.</p>
+        <br>
+        <br>
+        <br>
+        <!--
+        <ul class="news-social">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; Share</a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp; Tweet</a></li>
+          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>&nbsp; Pin it</a></li>
+        </ul>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------ News detail end ------------> 
+
+<!------------ Other News start ------------>
+
+<section style="background:#333333; text-align:center;">
+  <div class="news-content">
+    <div class="container">
+      <h2>Other News</h2>
+      <div class="h-line-container" style="display:inline-block;">
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-2.html"><div class="news-col"> <img src="img/blog-megax.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Nov 18, 2017</span>
+            <br>
+            <br>
+            <p>Novum Capital successfully closes MegaX, a retail based Token Generation Event</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+        <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-3.html"><div class="news-col"> <img src="img/news-kualalumpur.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Mar 19, 2018</span>
+            <br>
+            <br>
+            <p>Market expansion prompts Novum Capital to set up second office in Malaysia</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+        <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-3.html"><div class="news-col"> <img src="img/news-kualalumpur.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Mar 19, 2018</span>
+            <br>
+            <br>
+            <p>Market expansion prompts Novum Capital to set up second office in Malaysia</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="news.html" class="news-btn">Back to All News</a> </div>
+  </div>
+</section>
+
+<!------------ Other News end ------------>
+
+
+
+<section class="footer">
+  <div class="container">
+    <div class="logo-black"></div>
+    <div class="copyright">© 2017 Novum Capital. All Rights Reserved.</div>
+    <div style="clear:both;"></div>
+  </div>
+</section>
+
+</body>
+</html>

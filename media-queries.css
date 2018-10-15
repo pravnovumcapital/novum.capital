@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+ul#menu {
+	font-size:14px;
+}
+
+ul#menu li {
+	margin-left:20px;
+}
+
+}
+
+@media (max-width: 991px) {
+
+ul#menu {
+	display:none;
+}
+
+.novum-approach-1 {
+	float:none;
+}
+
+.novum-approach-2 {
+	text-align:left;
+	float:none;
+}
+
+.clients-ongoing {
+	width:33.333%;
+}
+
+.arrow-grey {
+	right:48%;
+	top:initial;
+	bottom:-24px;
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+}
+
+
+@media (max-width: 768px) {
+
+h1 {font-size:35px;}
+h2 {font-size:23px;}
+h3 {font-size:17px;}
+p {font-size:15px;}
+
+#featured {
+	background-image:url(img/main.jpg);
+	background-position:center;
+	background-size:cover;
+}
+
+.background-wrap {display:none;}
+
+.content {
+	padding-top:35%;
+	font-size: 35px;
+}
+
+.team-caption {
+	min-height:135px;
+}
+
+.clients-ongoing {
+	width:50%;
+}
+
+.logo-black {
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.copyright {float:none; text-align:center;}
+
+}
+
+@media (max-width: 500px) {
+
+nav #menuToggle {
+    height: 30px;
+    left: -50px;
+    top: 20px;
+    width: 35px;
+}
+
+#logo {
+    width: 140px;
+    height: 22px;
+    float: left;
+    margin-top: 25px;
+}
+	
+.team {
+	width:100%;
+}
+
+.team img {
+	max-width:100% !important;
+}
+	
+.team-caption {
+	min-height:100px;
+}
+
+.novum-img {
+	width:300px;
+	height:300px;
+	border-radius:300px;
+}
+
+.clients-ongoing {
+	width:100%;
+}
+
+.clients-complete {
+	width:100%;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding-top: 15px;
+}
+
+.social-icon i {
+    font-size: 24px;
+}
+
+}
+
