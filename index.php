@@ -662,6 +662,37 @@ and Investment Fund <br>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-4.html"><div class="news-col"> <img src="img/news-irwin.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Oct 14, 2018</span>
+            <br>
+            <br>
+            <p>Novum Capital shares venture capital insights on blockchain investments in Jakarta</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+        <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-5.html"><div class="news-col"> <img src="img/news-coinjax.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Oct 2018</span>
+            <br>
+            <br>
+            <p>High-tech crypto exchange, CoinJax, raises seed round with Novum Capital</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+        <div class="col-md-4 col-sm-4 v-pad">
+          <a href="news-detail-6.html"><div class="news-col"> <img src="img/news-cm.jpg" alt=""> <br>
+            <br>
+            <span class="news-date">Aug 2018</span>
+            <br>
+            <br>
+            <p>CloudMoolah hits US$15 million raise</p>
+            <br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
+        </div>
+        <!--
+        <div class="col-md-4 col-sm-4 v-pad">
           <a href="news-detail-3.html"><div class="news-col"> <img src="img/news-kualalumpur.jpg" alt=""> <br>
             <br>
             <span class="news-date">Mar 19, 2018</span>
@@ -690,7 +721,7 @@ and Investment Fund <br>
             <p>NOVUM CAPITAL WELCOMES LEADING CRYPTO LEGAL PROFESSIONAL, NIZAM...</p>
             <br>
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </div></a>
-        </div>
+        </div>-->
       </div>
       <br>
       <br>
