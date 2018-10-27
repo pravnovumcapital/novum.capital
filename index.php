@@ -507,22 +507,16 @@ and Investment Fund <br>
           </a> </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#cas" class="open-popup-link"> <img src="img/team-cass.jpg" alt="">
-          <div class="team-caption dark">
-            <h3>Cassandra Yeo</h3>
-            <p>Marketing Executive</p>
-          </div>
-          </a> </div>
         <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#kim" class="open-popup-link"> <img src="img/team-kim.jpg" alt="">
           <div class="team-caption darker">
             <h3>Kim Chang</h3>
             <p>Project Manager</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#liu" class="open-popup-link"> <img src="img/team-widelialiu.jpg" alt="">
+        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#amanda" class="open-popup-link"> <img src="img/team-amanda.jpg" alt="">
           <div class="team-caption dark">
-            <h3>Widelia Liu</h3>
-            <p>Investment Director</p>
+            <h3>Amanda </h3>
+            <p>Project Manager</p>
           </div>
           </a> </div>
       </div>
@@ -1011,6 +1005,16 @@ and Investment Fund <br>
   <p>Widelia is a serial entrepreneur having founded two businesses and successfully exited one. As the founder/CEO of womenswear fashion brand – Whole9Yards, she spearheaded its overseas expansion into 18 countries worldwide and led multiple investment rounds from venture capitalists. Prior to starting her own business, she worked as an investment banker in London focusing on inbound UK M&A deals. Widelia holds a BA (Hons) in Economics from the University of Cambridge and an MBA from the Wharton School of the University of Pennsylvania. </p>
 </div>
 <!---------- Popup 12 END ------------>
+
+<!---------- Popup 13 START ------------>
+<div id="amanda" class="white-popup mfp-hide sans">
+  <h2>Amanda</h2>
+  <h3>Project Manager</h3>
+  <br>
+  <br>
+  <p>She started out her career in human resources and talent acquisitions in multiple MNCs like Deloitte, KPMG and Cycle & Carriage. After a few years, she decided it's time to pursue her interest in communications. She doesn't like to be restricted by rules and prefers to be in the background, quietly observing. Currently doing a double degree in Journalism and Public Relations has helped in her writing skills. She would rather be sipping coffee in a quiet cafe on any given day.</p>
+</div>
+<!---------- Popup 13 END ------------>
 
 <!---------- Careers popup content START------------> 
 
