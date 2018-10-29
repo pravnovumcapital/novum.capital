@@ -516,7 +516,7 @@ and Investment Fund <br>
         <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#amanda" class="open-popup-link"> <img src="img/team-amanda.jpg" alt="">
           <div class="team-caption dark">
             <h3>Amanda </h3>
-            <p>Project Manager</p>
+            <p>Marketing Executive</p>
           </div>
           </a> </div>
       </div>
