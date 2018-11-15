@@ -487,10 +487,10 @@ and Investment Fund <br>
           </a> </div>        
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#julius" class="open-popup-link"> <img src="img/team-julius.jpg" alt="">
+        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#brandon" class="open-popup-link"> <img src="img/team-brandon.jpg" alt="">
           <div class="team-caption darker">
-            <h3>Julius Kew</h3>
-            <p>Senior Consultant</p>
+            <h3>Brandon Lee</h3>
+            <p>Country Manager (Korea)</p>
           </div>
           </a> </div>
         <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#coco" class="open-popup-link"> <img src="img/team-coco.jpg" alt="">
@@ -1015,6 +1015,16 @@ and Investment Fund <br>
   <p>She started out her career in human resources and talent acquisitions in multiple MNCs like Deloitte, KPMG and Cycle & Carriage. After a few years, she decided it's time to pursue her interest in communications. She doesn't like to be restricted by rules and prefers to be in the background, quietly observing. Currently doing a double degree in Journalism and Public Relations has helped in her writing skills. She would rather be sipping coffee in a quiet cafe on any given day.</p>
 </div>
 <!---------- Popup 13 END ------------>
+
+<!---------- Popup 14 START ------------>
+<div id="brandon" class="white-popup mfp-hide sans">
+  <h2>Brandon Lee</h2>
+  <h3>Country Manager (Korea)</h3>
+  <br>
+  <br>
+  <p>With many years of experience as a data scientist across industries and corporations such as Samsung and Siemens, Brandon excels in optimisation and improvisation of all processes. Prior to starting his own digital analytics company, SmartMind Inc, he was serving as the Vice President / Senior Data Scientist at Mediacorp Pte Ltd, the largest media business in Singapore. A sociable and quick-witted leader, Brandon breaks the stereotypes of a data scientist - channeling casual conversations into observations while combining his expertise to elevate and improve business processes with his findings.</p>
+</div>
+<!---------- Popup 14 END ------------>
 
 <!---------- Careers popup content START------------> 
 
