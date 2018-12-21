@@ -883,7 +883,13 @@ and Investment Fund <br>
   <h3>Managing Partner</h3>
   <br>
   <br>
-  <p>Jeremy Khoo is a business operator with a passion for the Southeast Asian e-commerce space, currently focused on establishing iFashion as a leading regional fashion and lifestyle retail company. He was a cofounder of e-commerce fast fashion label Dressabelle and lifestyle marketplace Megafash, both of which exited to iFashion. He was previously a military officer with the Republic of Singapore Air Force and was awarded the Sword of Honour. </p>
+  <p>Jeremy Khoo is an international business operator, founder and blockchain entrepreneur who has successfully exited 3 venture funded companies. He is currently VP of MC Payment and Group CEO of iFashion - a leading regional retail enabler and conglomerate. Under his leadership, iFashion and it's subsidiaries have raised multiple investment rounds from venture capitalists up to Series B. iFashion was acquired by MC Payment for $23 million and Jeremy will be co-leading the combined push for a public listing on the SGX in 2018.</p>
+  <br>
+  <p>Jeremy is a Partner and Principal Consultant in Novum Capital and Enblockr, which has accelerated and invested in many high profile companies that went on to sell more than USD100M in tokens so far. Jeremy is also Managing Partner in CRC Capital, which invests into early stage blockchain innovation.</p>
+  <br>
+  <p>Jeremy co-founded retail blockchain MegaX as well as Crypto-E-Commerce store Megaxstore which is spearheading cryptocurrency mass adoption. He also spends his time advising and building more than 40 exciting blockchain projects such as Consentium, Spiking, Bountie, Viola, Vanig and W Pay. Jeremy is a VeChain ICO partner and has been involved in blockchain development as a speaker, educator and investor.</p>
+  <br>
+  <p>Jeremy obtained his Bachelor's Degree in Mechanical Engineering from the Nanyang Technological University of Singapore and also received the prestigious Sword of Honour during Officer Commissioning from the Republic of Singapore Air Force.</p>
 </div>
 <!---------- Popup 2 END ------------> 
 
