@@ -513,12 +513,12 @@ and Investment Fund <br>
             <p>Project Manager</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#amanda" class="open-popup-link"> <img src="img/team-amanda.jpg" alt="">
+        <!-- <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#amanda" class="open-popup-link"> <img src="img/team-amanda.jpg" alt="">
           <div class="team-caption dark">
             <h3>Amanda</h3>
             <p>Marketing Executive</p>
           </div>
-          </a> </div>
+          </a> </div> -->
         <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#victor" class="open-popup-link"> <img src="img/team-victor.jpg" alt="">
           <div class="team-caption darker">
             <h3>Victor Chow</h3>
