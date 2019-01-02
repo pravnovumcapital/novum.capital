@@ -515,8 +515,14 @@ and Investment Fund <br>
           </a> </div>
         <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#amanda" class="open-popup-link"> <img src="img/team-amanda.jpg" alt="">
           <div class="team-caption dark">
-            <h3>Amanda </h3>
+            <h3>Amanda</h3>
             <p>Marketing Executive</p>
+          </div>
+          </a> </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 team"> <a href="#victor" class="open-popup-link"> <img src="img/team-victor.jpg" alt="">
+          <div class="team-caption darker">
+            <h3>Victor Chow</h3>
+            <p>Chief Investment Officer</p>
           </div>
           </a> </div>
       </div>
@@ -1031,6 +1037,16 @@ and Investment Fund <br>
   <p>With many years of experience as a data scientist across industries and corporations such as Samsung and Siemens, Brandon excels in optimisation and improvisation of all processes. Prior to starting his own digital analytics company, SmartMind Inc, he was serving as the Vice President / Senior Data Scientist at Mediacorp Pte Ltd, the largest media business in Singapore. A sociable and quick-witted leader, Brandon breaks the stereotypes of a data scientist - channeling casual conversations into observations while combining his expertise to elevate and improve business processes with his findings.</p>
 </div>
 <!---------- Popup 14 END ------------>
+
+<!---------- Popup 15 START ------------>
+<div id="victor" class="white-popup mfp-hide sans">
+  <h2>Victor Chow</h2>
+  <h3>Chief Investment Officer</h3>
+  <br>
+  <br>
+  <p>Victor Chow is a serial entrepreneur and senior corporate leader with over 28 years’ experience working in venture capital, start-ups, telecommunications, ICT, cryptofunds, financial & blockchain technologies, and most recently turned business investor. As Novum's Chief Investment Officer, he is responsible for deal-sourcing, M&A activities and investments. Victor has held C-level positions across general management, strategic planning, business development, sales, marketing and global operations management in Asia Pacific, Europe and North America. He was previously the Founding CEO of Singapore-based Fintech Accelerator INSPIRASIA and was Head of Asia for Life.SREDA VC Fintech-focused fund. He was most renowned in the IT industry for his contributions as the Global Chief Operating Officer COO for Cloud Computing and NextGen Data Centers of Huawei Technologies, a leading global information and communications technology company based in Shen Zhen China. Currently, Victor is also the Venture Partner of Fatfish Blockchain Limited - an ASX listed technology venture builder and Founder of ICOWorld Exchange and Senior Advisor to the International Decentralized Association of Cryptocurrency and Blockchains (IDACB).</p>
+</div>
+<!---------- Popup 15 END ------------>
 
 <!---------- Careers popup content START------------> 
 
