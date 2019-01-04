@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novum Capital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="component.css" />
+    <link rel="stylesheet" href="filter.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+<!-- Sendgrid -->
+<script type="text/javascript" src="//sgwidget.leaderapps.co/js/sg-widget.js"></script>
+
+<style>
+
+.white-popup {
+	position: relative;
+  background: url(img/bg-popup-small.jpg) #1e222b center bottom no-repeat;
+  background-size:100%;
+	width: auto;
+	max-width: 555px;
+	margin: 25px auto;
+  padding: 50px 25px 120px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.white-popup .btn {
+  color:#000;
+  font-weight: 700;
+}
+
+.big-popup {
+  max-width: 945px;
+  padding-bottom: 170px;
+  background: url(img/bg-bottom-popup-big.jpg) #1e222b center bottom no-repeat;
+  background-size:100%;
+}
+
+.big-popup img {
+  max-width: 750px;
+}
+
+.careers-popup {text-align: left;}
+
+.white-popup h2 {color:#00f5ff;}
+
+.mfp-bg {
+	background: #000000;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #00f5ff;
+  top:10px;
+  right:10px;
+}
+.mfp-close {
+	font-size: 36px;
+}
+
+.flexslider .slides img {display: inline-block;}
+
+</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+  
+<!------------ Navigation start ------------>
+<header>
+    <a href="#home"><div id="logo"></div></a>
+    <ul class="social">
+      <li>
+        <div class="dropdown">
+          <i class="fa fa-globe" style="font-size:14px;"></i> &nbsp;EN &nbsp;<i class="fa fa-chevron-down chevron-pos"></i>
+          <div class="dropdown-content">
+            <p><a href="index-zh.html">Chinese</a></p>
+            <p><a href="index-kr.html">Korean</a></p>
+          </div>
+        </div>
+      </li>
+      <li><a href="https://instagram.com/novumcapital" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://facebook.com/novumcapital" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/novumcapital" target="_blank"><i class="fa fa-twitter"></a></i></li>
+    </ul>
+    <ul id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Our Projects</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#team">The Novum Edge</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <a href="#about" onclick="closeSidebar(this)">About</a>
+      <a href="#projects" onclick="closeSidebar(this)">Our Projects</a>
+      <a href="#services" onclick="closeSidebar(this)">Our Services</a>
+      <a href="#news" onclick="closeSidebar(this)">News</a>
+      <a href="#team" onclick="closeSidebar(this)">The Novum Edge</a>
+      <a href="#careers" onclick="closeSidebar(this)">Careers</a>
+      <a href="#contact" onclick="closeSidebar(this)">Contact</a>
+      <a></a>
+      <div class="dropdown lng-mobile">
+        EN &nbsp;<i class="fa fa-chevron-down chevron-pos"></i>
+        <div class="dropdown-content">
+          <p><a href="index-zh.html">Chinese</a></p>
+          <p><a href="index-kr.html">Korean</a></p>
+        </div>
+      </div>
+      <div class="social-mobile">
+        <ul>
+          <li><a href="https://instagram.com/novumcapital" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://facebook.com/novumcapital" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/novumcapital" target="_blank"><i class="fa fa-twitter"></a></i></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<!------------ Navigation end ------------>
+
+<!------------ Home start ------------>
+<div id="home">
+  <div id="stars-bg"></div>
+  <div id="cubes-bg"></div>
+  <div class="container">
+    <div class="row" style="position:relative; z-index:300;">
+      <div class="col-md-7 col-sm-12 col-12 " style="padding-top:100px;">
+        <h1 class="wow fadeInUp">Blockchain <span class="blue">Accelerator <br>&</span> Investment <span class="blue">Firm</span></h1>
+      </div>
+      <div class="col-md-5 col-sm-12 col-12 v-pad wow fadeInRight" style="text-align:center;">
+          <img id="cube" src="img/cube.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!------------ Home end ------------>
+
+<!------------ About start ------------>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 vertical-title mobile-dis">
+        <img src="img/text-about.png" alt="">
+      </div>
+      <div class="col-md-9 col-sm-9 col-xs-12 logo-big">
+        <div class="h-line"></div>
+        <span class="small-font">About Novum Capital</span>
+        <div class="about-logo wow fadeInUp"><img src="img/logo-big.png" alt=""></div>
+        <h3 class="wow fadeInUp">Novum Capital has been engaged successfully by enterprises and start-ups to raise funds.
+          Being a global accelerator and investment firm specialising in blockchain and crypto-economy, we provide full spectrum ICO advisory and investments services.
+          Based in Singapore, we have offices in Kuala Lumpur, Ha Noi and Bali.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ About end ------------>
+
+<!------------ Projects start ------------>
+<section id="projects">
+  <div class="container">
+    <p class="small-font">Awesome Clients</p>
+    <br>
+    <h2>Our Completed Projects</h2>
+    <br><br><br>
+    <div class="projects-wrapper wow fadeInUp">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+          <a href="#consentium" class="open-popup-link"><img src="img/client-consentium.png" alt=""></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+           <a href="#cloudmoolah" class="open-popup-link"><img src="img/client-cm.png" alt=""></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+          <a href="#wgp" class="open-popup-link"><img src="img/client-wgp.png" alt=""></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+          <a href="#solarite" class="open-popup-link"><img src="img/client-solarite.png" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+          <a href="#bountie" class="open-popup-link"><img src="img/client-bountie.png" alt=""></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 v-pad client-logo">
+           <a href="#nexxo" class="open-popup-link"><img src="img/client-nexxo.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <p class="small-font">OUR TEAM MEMBERS HAVE ALSO ADVISED</p>
+    <br>
+    <div class="row wow fadeInUp">
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-antihack.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-arawtoken.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-atf.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-centareum.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-dice.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-elysian.jpg" alt=""></div>
+    </div>
+    <div class="row wow fadeInUp">
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-flipnpik.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-gemstra.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-ggrocket.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-highvibe.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-imusify.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-megax.jpg" alt=""></div>
+    </div>
+    <div class="row wow fadeInUp">
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-opu.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-redcab.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-spiking.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-tillbilly.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-urunit.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-vanig.jpg" alt=""></div>
+    </div>
+    <div class="row wow fadeInUp">
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-viola.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-xrt.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-gofind.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-getchange.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-getdoit.jpg" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-mapcoin.jpg" alt=""></div>
+    </div>
+    <div class="row wow fadeInUp">
+      <div class="col-lg-2 col-md-4 col-4 v-pad"><img src="img/advised-greenlink.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+<!------------ Projects end ------------>
+
+<!------------ Services start ------------>
+<section id="services">
+  <div class="services-fg"></div>
+  <div class="services-bg"></div>
+
+  <div class="container" style="position:relative; z-index:300;">
+    <p class="small-font">What We Do</p>
+    <br>
+    <h2>Our Services</h2>
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6 v-pad wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="circle-service"><img src="img/service-business-strategy-advisory.png" alt=""></div>
+        <h3>Business Strategy & Advisory</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 v-pad wow fadeInLeft">
+        <div class="circle-service"><img src="img/service-legal-coverage.png" alt=""></div>
+        <h3>Legal Coverage</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 v-pad wow fadeInRight">
+        <div class="circle-service"><img src="img/service-custom-blockchain.png" alt=""></div>
+        <h3>Custom Blockchain</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 v-pad wow fadeInRight" data-wow-delay="0.3s">
+        <div class="circle-service"><img src="img/service-investor-relations.png" alt=""></div>
+        <h3>Investor Relations</h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-6 v-pad wow fadeInLeft">
+        <div class="circle-service"><img src="img/service-marketing.png" alt=""></div>
+        <h3>Marketing, PR & Community Building</h3>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6 v-pad wow fadeInUp">
+        <div class="circle-service"><img src="img/service-whitepaper-drafting.png" alt=""></div>
+        <h3>Whitepaper Drafting & Vetting</h3>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6 v-pad wow fadeInRight">
+        <div class="circle-service"><img src="img/service-secured-kyc.png" alt=""></div>
+        <h3>Secured KYC & Token Sale Platform</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Services end ------------>
+
+<!------------ News start ------------>
+<section id="news">
+  <main>
+  <div class="container" style="position:relative;">
+    <div class="h-line"></div>
+    <span class="small-font">Whats on</span>
+    <br><br><br>
+    <h2>News</h2>
+    <div class="updates-title mobile-dis"><img src="img/text-updates.png" alt=""></div>
+    <div class="viewall-btn"><a href="news.html" target="_blank" class="btn">View All</a></div>
+    <br><br><br>
+    <div class="flex-container wow fadeInUp">
+      <div class="news-slider">
+        <ul class="slides">
+          <li>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+                <a href="#news-irwin" class="tilter tilter--6 titler-custom open-popup-link">
+                  <figure class="tilter__figure">
+                    <div class="news-info">
+                      <p>Oct 14 2018</p>
+                      <br>
+                      <h3>Novum Capital Shares Venture Capital Insights on Blockchain Investments in Jakarta</h3>
+                    </div>
+                    <div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+                    <svg class="tilter__deco tilter__deco--lines news-bg news-irwin" viewBox="0 0 300 415">
+                      <path d="M20.5,20.5h260v375h-260V20.5z" />
+                    </svg>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+                <a href="#news-coinjax" class="tilter tilter--6 titler-custom open-popup-link">
+                  <figure class="tilter__figure">
+                    <div class="news-info">
+                      <p>Oct 2018</p>
+                      <br>
+                      <h3>High-tech Crypto Exchange, Coinjax, Raises Seed Round With Novum Capital</h3>
+                    </div>
+                    <div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+                    <svg class="tilter__deco tilter__deco--lines news-bg news-coinjax" viewBox="0 0 300 415">
+                      <path d="M20.5,20.5h260v375h-260V20.5z" />
+                    </svg>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+                <a href="#news-cm" class="tilter tilter--6 titler-custom open-popup-link">
+                  <figure class="tilter__figure">
+                    <div class="news-info">
+                      <p>Aug 2018</p>
+                      <br>
+                      <h3>Cloudmoolah Hits US$15 Million Raise</h3>
+                    </div>
+                    <div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+                    <svg class="tilter__deco tilter__deco--lines news-bg news-cm" viewBox="0 0 300 415">
+                      <path d="M20.5,20.5h260v375h-260V20.5z" />
+                    </svg>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+                <a href="#news-consentium" class="tilter tilter--6 titler-custom open-popup-link">
+                  <figure class="tilter__figure">
+                    <div class="news-info">
+                      <p>May 2018</p>
+                      <br>
+                      <h3>Consentium Succesfully Raises US$42 Million</h3>
+                    </div>
+                    <div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+                    <svg class="tilter__deco tilter__deco--lines news-bg news-consentium" viewBox="0 0 300 415">
+                      <path d="M20.5,20.5h260v375h-260V20.5z" />
+                    </svg>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+</section>
+<!------------ News end ------------>
+
+<!------------ Novum edge start ------------>
+<section id="team">
+  <div class="container" style="position:relative;">
+    <div class="team-title-pos">
+      <div class="team-title"><img src="img/text-team.png" alt=""></div>
+    </div>
+    <p class="small-font">Who We Are</p>
+    <br>
+    <h2>The Novum Edge</h2>
+    <br><br><br><br>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp">
+        <a href="#chris" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-chris.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/christopher-low-570161/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Christopher Low</h3>
+          <p>Managing Partner and Executive Chairman</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.3s">
+        <a href="#jeremy" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-jeremy.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/jeremy-khoo/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Jeremy Khoo</h3>
+          <p>Managing Partner</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.6s">
+        <a href="#nizam" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-nizam.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/nizam-ismail-2a4090b/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Nizam Ismail</h3>
+          <p>Legal Chief</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.9s">
+        <a href="#hal" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-hal.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/hal-bame/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Hal Bame</h3>
+          <p>Advisor (North America)</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp">
+        <a href="#irwin" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-irwin.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/irwinchee/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Irwin Chee</h3>
+          <p>Managing Consultant</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.3s">
+        <a href="#vincent" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-vincent.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/vincent-lee-2251b120/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Vincent Lee</h3>
+          <p>Public Accountant</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.6s">
+        <a href="#brandon" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-brandon.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/brandon-sangsoo-lee-74a91416/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Brandon Lee</h3>
+          <p>Country Manager (Korea)</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.9s">
+        <a href="#coco" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-coco.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/coco-ong/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Coco Ong</h3>
+          <p>Marketing Chief</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp">
+        <a href="#jonas" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-jonas.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/jonas87/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Jonas Larsson</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.3s">
+        <a href="#kim" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-kim.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/kimberley-chang-8195a5140/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Kim Chang</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.6s">
+        <a href="#amanda" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-amanda.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="https://www.linkedin.com/in/amanda-ho-997790110/" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Amanda</h3>
+          <p>Marketing Executive</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 vpad team-wrapper wow fadeInUp" data-wow-delay="0.6s">
+        <a href="#victor" class="open-popup-link">
+          <div class="circle-team">
+            <div class="team-img"><img src="img/team-victor.jpg" alt=""></div>
+          </div>
+        </a>
+        <div class="team-info">
+          <a href="#" target="_blank" class="team-linkedin"><i class="fa fa-linkedin"></i></a>
+          <h3>Victor Chow</h3>
+          <p>Chief Investment Officer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Novum edge end ------------>
+
+<!------------ Careers start ------------>
+<section id="careers">
+  <div class="container">
+    <p class="small-font">Who Are Hiring!</p>
+    <br>
+    <h2>Careers</h2>
+    <br><br><br>
+    <div class="cd-main-content wow fadeInUp">
+      <div class="cd-tab-filter-wrapper">
+        <div class="cd-tab-filter">
+          <div class="career-location">Location</div>
+          <ul class="cd-filters">
+            <li class="placeholder"> 
+              <a data-type="all" href="#0" class="filter-arrow">All</a>
+            </li> 
+            <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+            <li class="filter" data-filter=".singapore"><a href="#0" data-type="singapore">Singapore</a></li>
+            <li class="filter" data-filter=".malaysia"><a href="#0" data-type="malaysia">Malaysia</a></li>
+            <li class="filter" data-filter=".vietnam"><a href="#0" data-type="malaysia">Vietnam</a></li>
+            <li class="filter" data-filter=".indonesia"><a href="#0" data-type="malaysia">Indonesia</a></li>
+            <li class="filter" data-filter=".thailand"><a href="#0" data-type="malaysia">Thailand</a></li>
+            <li class="filter" data-filter=".korea"><a href="#0" data-type="malaysia">Korea</a></li>
+          </ul> <!-- cd-filters -->
+        </div> <!-- cd-tab-filter -->
+      </div> <!-- cd-tab-filter-wrapper -->
+      <div class="cd-gallery">
+        <ul>
+          <li class="mix all singapore malaysia">
+            <a href="#blockchaindev" class="career-hover open-popup-link">
+              <div class="career-info"><h3>Blockchain Developer</h3></div>
+              <div class="career-btn"><i class="fa fa-long-arrow-right"></i></div>
+            </a>
+          </li>
+          <li class="mix all singapore malaysia">
+            <a href="#consultant" class="career-hover open-popup-link">
+              <div class="career-info"><h3>Consultant</h3></div>
+              <div class="career-btn"><i class="fa fa-long-arrow-right"></i></div>
+            </a>
+          </li>
+          <li class="mix all singapore">
+            <a href="#blockchaindev" class="career-hover open-popup-link">
+              <div class="career-info"><h3>Blockchain Developer</h3></div>
+              <div class="career-btn"><i class="fa fa-long-arrow-right"></i></div>
+            </a>
+          </li>
+          <li class="mix all malaysia">
+            <a href="#consultant" class="career-hover open-popup-link">
+              <div class="career-info"><h3>Consultant</h3></div>
+              <div class="career-btn"><i class="fa fa-long-arrow-right"></i></div>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- cd-gallery -->
+    </div> <!-- cd-main-content -->
+    <br>
+    <div class="row">
+      <div class="col-md-4 v-pad"><img src="img/corporate-value.png" alt=""></div>
+      <div class="col-md-8 v-pad" style="text-align:left;">
+        <h3>Our Corporate Culture</h3>
+        <br>
+        <p>No one works in Novum Capital. For each team member, we are passionate about changing the world through innovative technology. We approach each of our client’s requirements with zest and go out of our way to ensure their success. Every Novum team member is someone who goes beyond the 100% to over-deliver beyond expectations. Each of us are proactive and is able to hold his or her own in any intellectual discussion.</p>
+        <br>
+        <p>Joining the Novum team is an accolade itself. We look for individuals with a unique personality and place secondary importance to academic and personal achievements. If you have the passion and drive to make the world a better place,  <a href="#contact" style="color:#00f5ff">talk to us today!</a></p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!------------ Careers end ------------>
+
+<!------------ Contact start ------------>
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 vertical-title mobile-dis">
+        <img src="img/text-contact.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-12 col-12 v-pad wow fadeInUp">
+        <div class="h-line"></div>
+        <span class="small-font">Our Location</span>
+        <br><br><br>
+        <h2>Contact Us</h2>
+        <p>You may contact us by dropping us an email at <a href="mailto:ask@novum.capital" style="color:#00f5ff; font-size: 20px;">ask@novum.capital</a> &nbsp;&nbsp;or</p>
+        <br><br>
+        <a href="#contactus" class="btn open-popup-link" style="color:#000;">Make an Appointment with Us</a>
+        <br><br><br>
+        <img src="img/map.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-12 col-12 v-pad wow fadeInRight">
+        <h3>Singapore HQ</h3>
+        <p>Mox, Level 3, 451 Joo Chiat Road,<br>
+           Singapore 427664
+        </p>
+        <br><br>
+        <h3>Malaysia</h3>
+        <p>Level 16, 16-01<br>
+           No 6 Changkat Semantan<br>
+           Damansara Heights<br>
+           50490 Kuala Lumpur<br>
+        </p>
+        <br><br>
+        <h3>Vietnam</h3>
+        <p>Mpro, Level 7,<br>
+          9 Duy Tan, Cau Giay district,<br>
+          Hanoi, Vietnam<br>
+        </p>
+        <br><br>
+        <h3>Indonesia</h3>
+        <p>No. 88 Jalan Batu Mejan<br>
+          Canggu, Echo Beach<br>
+          Kuta Utara, Kabupaten Badung<br>
+          Bali, Indonesia
+        </p>
+        <br><br>
+        <h3>South Korea</h3>
+        <p>Address here<br>
+          Address here<br>
+          Seoul, South Korea
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Contact end ------------>
+
+
+<footer>
+  <div class="container">
+    <div id="footer-bg"></div>
+    <p class="small-font" style="position:relative; z-index:200;">© 2018 Novum Capital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!---------- Subscribe  ------------> 
+<div class="subscription">
+  <a href="#subscribe" class="subscribe-btn open-popup-link">Subscribe &nbsp;<i class="fa fa-paper-plane"></i></a>
+</div>
+
+<div id="cookie-popup">
+  <div class="cookie-content">
+    <h3>Cookies Law</h3>
+    <br>
+    <p>This website uses cookies to ensure you get the best experience on our website. By continuing to browse the site you are agreeing to this policy, you consent to our use of cookies.</p>
+    <br><br>
+    <a href="#" onclick="document.getElementById('cookie-popup').style.display='none';return false;" class="btn">OK</a>
+  </div>
+</div>
+
+<div id="subscribe" class="white-popup mfp-hide sans" style="text-align:center;">
+  <h3>Subscribe for our Mailing List</h3>
+  <br><br>
+  <p>From project owners to investors, subscribe to our mailing list to keep yourself updated with our weekly news on crypto, blockchain, investments and upcoming events!</p>
+  <br>
+  <!--<div class="v-pad">
+    <input type='text' class="input-style"  placeholder="NAME"/>
+  </div>
+  <div class="v-pad">
+    <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS"/>
+  </div>
+  <div class="v-pad">
+    <button type='submit' value='Submit' class="btn">Submit</button>
+  </div>-->
+  <div id="sendgrid-subscription-widget" style="color:#fff;" class="sendgrid-subscription-widget" data-emailerror="Please enter a valid email address" data-checkboxerror="Please tick the box to accept our conditions">
+    <form id="sg-widget" data-token="a5e671fd4e46e6dd233f50a0ee735dfa" onsubmit="return false;">
+      <div class="sg-response" id="sg-response"></div><br>
+      <input id="sg_signup_first_name" type="text" name="sg_signup_first_name" class="input-style" placeholder="First Name" required><br><br>
+      <input id="sg_signup_last_name" type="text" name="sg_signup_last_name" class="input-style" placeholder="Last Name" required><br><br>
+      <input id="sg_email" type="email" name="sg_email" class="input-style" placeholder="you@example.com" required><br><br><br>
+      <button type="submit" id="sg-submit-btn" class="btn" value="Subscribe">Subscribe</button><br><br><br>
+      <div class="sg-consent-text">
+        <label><input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox"> &nbsp;&nbsp; I understand and consent to the following</label> <a target="_blank" href="">Privacy Notice</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!---------- Subscribe end ------------>
+
+<!---------- Contact popup start ------------>
+<div id="contactus" class="white-popup mfp-hide sans" style="text-align:center;">
+  <h3>Make an Appointment</h3>
+  <br><br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus sed purus varius luctus. Quisque egestas mi nec mattis tristique. Cras pellentesque mollis elit, vel efficitur lacus tempus id.</p>
+  <br>
+  <div class="v-pad">
+    <input type='text' class="input-style"  placeholder="NAME"/>
+  </div>
+  <div class="v-pad">
+    <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS"/>
+  </div>
+  <div class="v-pad">
+    <input type='text' class="input-style"  placeholder="COMPANY NAME"/>
+  </div>
+  <div class="v-pad">
+    <input type='text' class="input-style"  placeholder="CONTACT NO"/>
+  </div>
+  <div class="v-pad">
+    <textarea class="input-style" placeholder="HOW CAN WE HELP?"></textarea>
+  </div>
+  <p>By submitting this form, you agree to allow Novum Capital to contact you for future and ongoing communications by email.</p>
+  <div class="v-pad">
+    <button type='submit' value='Submit' class="btn">Submit</button>
+  </div>
+</div>
+<!---------- Contact popup end ------------>
+
+<!---------- Projects popup ------------> 
+<div id="consentium" class="white-popup projects-popup mfp-hide sans">
+  <h3>CONSENTIUM</h3>
+  <br><br>
+  <p>Consentium is a crypto wallet, chat and community app all in one that rewards users for their daily engagement. The token sale has successfully ended in April 2018, totalling the raised amount to be US$42 million.</p>
+  <br><br>
+  <a href="https://consentium.net/" target="_blank" class="btn">Learn More</a>
+</div>
+
+<div id="cloudmoolah" class="white-popup projects-popup mfp-hide sans">
+  <h3>CLOUDMOOLAH</h3>
+  <br><br>
+  <p>CloudMoolah, a comprehensive content and payment aggregator that allows game developers and gamers and payment merchants to conveniently, securely manage payment matters across the world. CloudMoolah has managed to raise a total of US$15 million in May 2018.</p>
+  <br><br>
+  <a href="https://cloudmoolah.io/" target="_blank" class="btn">Learn More</a>
+</div>
+
+<div id="wgp" class="white-popup projects-popup mfp-hide sans">
+  <h3>W GREEN PAY</h3>
+  <br><br>
+  <p>W Green Pay is the token facilitating the social carbon credit trading behind the HOOXI campaign in Korea. Backed by Korean government officials, the campaign has received high profile coverage on the media and frequently holds events with its Korean celebrity ambassadors. The token sale is scheduled to take place in Q4 2018.</p>
+  <br><br>
+  <a href="https://wpay.sg/" target="_blank" class="btn">Learn More</a>
+</div>
+
+<div id="solarite" class="white-popup projects-popup mfp-hide sans">
+  <h3>SOLARITE</h3>
+  <br><br>
+  <p>Solarite blockchain employs the Proof-of-Power (PoP) concept to reward people who produce energy, and in return, its tokens help to facilitate the Solarite ecosystem. Solarite aims to solve the issue of rising energy consumption in the blockchain sphere, as well as to encourage people to be part of solar energy production.</p>
+  <br><br>
+  <a href="https://solarite.io/" target="_blank" class="btn">Learn More</a>
+</div>
+
+<div id="bountie" class="white-popup projects-popup mfp-hide sans">
+  <h3>BOUNTIE</h3>
+  <br><br>
+  <p>Bountie aims to revolutionise the gaming sphere by giving gamers and game hobbyists the opportunity to earn by participating in tournaments. With its team members actively participating in events and holding educational talks, the project has garnered gamers' attention and is looking to launch its public pre-sale in September 2018.</p>
+  <br><br>
+  <a href="https://bountie.io/" target="_blank" class="btn">Learn More</a>
+</div>
+
+<div id="nexxo" class="white-popup projects-popup mfp-hide sans">
+  <h3>NEXXO</h3>
+  <br><br>
+  <p>NEXXO is the world's first global blockchain-powered small business banking platform. The encompassing global blockchain, NEXXONet, is made up of local private blockchains which are legally compliant. Built on its successful existing business model, NEXXO's token sale will happen in October 2018.</p>
+  <br><br>
+  <a href="https://nexxo.io/" target="_blank" class="btn">Learn More</a>
+</div>
+<!---------- Projects popup end ------------>
+
+<!---------- News popup ------------> 
+<div id="news-irwin" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-irwin.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL SHARES VENTURE CAPITAL INSIGHTS ON BLOCKCHAIN INVESTMENTS IN JAKARTA</h3>
+  <br><br>
+  <p>Early this month, Novum Capital was at the Blockchain Asia Forum 2018: Blockchain Applications and Economics Indonesia Forum in Jakarta. Irwin Chee, Managing Consultant of Novum Capital, was the panelist on the main conference day.</p>
+  <br>
+  <p>During the panel discussion, Chee shared insights on venture capital valuation on blockchain investments with the forum’s 300 attendees which comprised of government officials, funds and blockchain projects. The number and variety of attendees reflect the growing interest in blockchain technology, as well as the cumulative efforts of crypto enthusiasts coming together to find ways in promoting mass adoption for blockchain technology.</p>
+</div>
+
+<div id="news-coinjax" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-coinjax.jpg" alt="">
+  <br><br><br>
+  <h3>HIGH-TECH CRYPTO EXCHANGE, COINJAX, RAISES SEED ROUND WITH NOVUM CAPITAL</h3>
+  <br><br>
+  <p>Novum participates in CoinJax seed round and partners strategically with the exchange going forward. CoinJax is an international high-tech cryptocurrency exchange, built from ground up with the emphasis of scalability and security. CoinJax employs the latest proprietary security techniques and best industry practice. All funds are stored in cold wallets, with a multi-sig process to ensure strong corporate governance and compliance.</p>
+</div>
+
+<div id="news-cm" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-cm.jpg" alt="">
+  <br><br><br>
+  <h3>CLOUDMOOLAH HITS US$15 MILLION RAISE</h3>
+  <br><br>
+  <p>Following a successful US$15 million Token Sale in April 2018, Cloud Alliance’s (commonly known as CloudMoolah) MOO Token (XMOO) has successfully listed on Coinsuper as its first exchange. Cloud Alliance’s flagship product, CloudMoolah, is a payment aggregator integrated within the Unity Technologies’ game development software and is offered alongside other in-app-purchase (IAP) products from technology giants such as Apple, Google, Amazon, Facebook, Xiaomi and Samsung. CloudMoolah allows Unity developers to enable in-app revenue collection from more than 500,000 retail point of sales across Southeast Asia where the average credit card penetration rate is less than 3%.</p>
+</div>
+
+<div id="news-consentium" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-consentium.jpg" alt="">
+  <br><br><br>
+  <h3>CONSENTIUM SUCCESSFULLY RAISES US$42 MILLION</h3>
+  <br><br>
+  <p>Consentium sells out USD42M offering in token sales. Consentium allows peer-to-peer (P2P), multi-digital-currency transfers between users. The fintech platform also offers a transactional fee redistribution programme as an incentive to create and cultivate strong in-app communities. Consentium uses a reward system based on creation of quality community groups, comprising both amount of users and on-app reputation of users.</p>
+</div>
+
+<div id="news-kualalumpur" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-kualalumpur.jpg" alt="">
+  <br><br><br>
+  <h3>MARKET EXPANSION PROMPTS NOVUM CAPITAL TO SET UP SECOND OFFICE IN MALAYSIA</h3>
+  <br><br>
+  <p>Novum Capital, one of Southeast Asia’s leading blockchain consultancy firms, announces its expansion into Malaysia. This expansion allows Novum Capital to better serve its Malaysia-based clientele. The move into Kuala Lumpur was prompted by its ongoing projects in the country. Currently, Novum Capital has two ongoing projects and expects to have a client base in Malaysia in the foreseeable future. This rising demand is a clear indication of companies wanting to fundraise through the blockchain.</p>
+</div>
+
+<div id="news-megax" class="white-popup big-popup mfp-hide sans">
+  <img src="img/blog-megax.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL SUCCESSFULLY CLOSES MEGAX, A RETAIL BASED TOKEN GENERATION EVENT</h3>
+  <br><br>
+  <p>iFashionGroup today successfully completes its TGE for the MegaX tokens. More than Three Million Singapore Dollars were raised in this TGE. The Novum Capital team assisted throughout the TGE process and was responsible for deploying highly secure token generation software and conducting Know-Your-Customer diligence in order to ensure a safe and compliant TGE process.</p>
+</div>
+
+<div id="news-nizam" class="white-popup big-popup mfp-hide sans">
+  <img src="img/blog-nizam.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL WELCOMES LEADING CRYPTO LEGAL PROFESSIONAL, NIZAM ISMAIL, TO ITS TEAM</h3>
+  <br><br>
+  <p>Novum Capital is proud to welcome Mr Nizam Ismail to the team. Mr Ismail is a Co-Founder of RHT Compliance solutions and previously was a Deputy Director and Head of the Market Conduct Policy Division of the Monetary Authority of Singapore. Mr Ismail's skillset complements the existing founding team members and will provide immense value add to Novum Capital's clients.</p>
+</div>
+<!---------- News popup end ------------>
+
+<!---------- Team popup ------------> 
+<div id="chris" class="white-popup big-popup mfp-hide sans">
+  <h2>Chris Low</h2>
+  <h3>Managing Partner & Executive Chairman</h3>
+  <br><br>
+  <p>Mr Low is a seasoned technology entrepreneur for almost 20 years with a track record of building successful technology companies. His first startup called Pendulab was operating as a Software-as-a-Service offering web based collaboration solution. Within a short span of four years, Mr Low had built an incredible sales enterprise which garnered thousands of customers worldwide. Pendulab was subsequently acquired by a leading US-based private equity firm.</p>
+  <br><br>
+  <p>Mr Low went on to start what was Southeast Asia largest casual game platform, Viwawa, back in 2008. Within two years, Viwawa became the top 100 site for many countries in Southeast Asia, boasting millions of gamers. Seeing a growing trend for fintech, Mr Low embarked on a new venture, SoftPay Mobile, which aims to be the “Square” of Southeast Asia. Within two years, SoftPay Mobile became the largest Mobile Point of Sale company in Vietnam. Mr Low was instrumental in steering SoftPay Mobile to a strategic partnership with Indonesia’s largest bank, Bank Mandiri. Mr Low also successfully raised funds for SoftPay Mobile under Series A.</p>
+  <br><br>
+  <p>Mr Low graduated with a Merit in Computing from the National University of Singapore. Mr Low has been passionate about blockchain technologies since 2012. He loves to read up on the latest blockchain technologies and does some coding in his spare time.</p>
+</div>
+
+<div id="jeremy" class="white-popup big-popup mfp-hide sans">
+  <h2>Jeremy Khoo</h2>
+  <h3>Managing Partner</h3>
+  <br><br>
+  <p>Jeremy Khoo is an international business operator, founder and blockchain entrepreneur who has successfully exited 3 venture funded companies. He is currently VP of MC Payment and Group CEO of iFashion - a leading regional retail enabler and conglomerate. Under his leadership, iFashion and it's subsidiaries have raised multiple investment rounds from venture capitalists up to Series B. iFashion was acquired by MC Payment for $23 million and Jeremy will be co-leading the combined push for a public listing on the SGX in 2018.</p>
+  <br>
+  <p>Jeremy is a Partner and Principal Consultant in Novum Capital and Enblockr, which has accelerated and invested in many high profile companies that went on to sell more than USD100M in tokens so far. Jeremy is also Managing Partner in CRC Capital, which invests into early stage blockchain innovation.</p>
+  <br>
+  <p>Jeremy co-founded retail blockchain MegaX as well as Crypto-E-Commerce store Megaxstore which is spearheading cryptocurrency mass adoption. He also spends his time advising and building more than 40 exciting blockchain projects such as Consentium, Spiking, Bountie, Viola, Vanig and W Pay. Jeremy is a VeChain ICO partner and has been involved in blockchain development as a speaker, educator and investor.</p>
+  <br>
+  <p>Jeremy obtained his Bachelor's Degree in Mechanical Engineering from the Nanyang Technological University of Singapore and also received the prestigious Sword of Honour during Officer Commissioning from the Republic of Singapore Air Force.</p>
+</div>
+
+<div id="nizam" class="white-popup big-popup mfp-hide sans">
+  <h2>Nizam Ismail</h2>
+  <h3>Legal Chief</h3>
+  <br><br>
+  <p>Nizam Ismail is a Partner and Head of the Financial Services Practice of RHTLaw Taylor Wessing in Singapore.</p>
+  <br>
+  <p>He is also Co-Founder of RHT Compliance Solutions, a dedicated regulatory compliance consultancy based in Singapore, Malaysia and Indonesia.</p>
+  <br>
+  <p>Nizam draws upon his previous regulatory experience as Deputy Director and Head of the Market Conduct Policy Division of the Monetary Authority of Singapore, his compliance background as Head of Compliance for Southeast Asia at Lehman Brothers and Morgan Stanley, and his legal background as Deputy Public Prosecutor/State Counsel at the Commercial Affairs Department and Senior Legal Counsel at Citigroup, to help cryptocurrency and Blockchain companies and financial institutions in Southeast Asia with various legal and regulatory compliance issues, and to also design practical and risk-focused compliance programs.</p>
+  <br>
+  <p>He has advised global companies on ICOs or token-generating events in Singapore, cryptocurrency exchanges as well as other cryptocurrency intermediaries.</p>
+  <br>
+  <p>Nizam is also a Fellow at the Singapore University of Social Studies, where he focuses on cryptocurrency regulations, as well as Chairman of the Regulatory Sub-Committee of ACCESS, a cryptocurrency and blockchain association in Singapore.</p>
+</div>
+
+<div id="hal" class="white-popup big-popup mfp-hide sans">
+  <h2>Hal Bame</h2>
+  <h3>Advisor (North America)</h3>
+  <br><br>
+  <p>Hal has over 15 yrs of global games, esports and digital experience having worked with ESL (Electronic Sports League, the world’s Leading esports company), as Managing Director for Southeast Asia, Hong Kong, Taiwan and Macau, as well as co-founder For Nemesis, a casual games esports gaming platform focusing on emerging markets. He has also held senior international roles for Sony Computer Entertainment Europe (PlayStation) and Codemasters Software Company, looking after iconic products such as PlayStation 3 and the Formula One game franchise in emerging markets. Hal is currently advising blockchain-related game and entertainment companies in both the US and Asia.</p>
+</div>
+
+<div id="irwin" class="white-popup big-popup mfp-hide sans">
+  <h2>Irwin Chee</h2>
+  <h3>Lead Consultant</h3>
+  <br><br>
+  <p>Starting his career in product development and marketing, Irwin was at i-Sprint Innovations, a security tech firm. During his time, he helped launched more than fourteen products and went through two rounds of acquisitions. He was cofounder at Rimu Group, a venture capital fund which invests across SEA. Irwin was also General Manager responsible for business development and operations at Rockstagvid, a Singaporean video production firm and built 3 hyperlocal media assets.</p>
+</div>
+
+<div id="vincent" class="white-popup big-popup mfp-hide sans">
+  <h2>Vincent Lee</h2>
+  <h3>public Consultant</h3>
+  <br><br>
+  <p>Vincent is a Public Accountant with over 20 years of industry experience. He is also a Fellow Chartered Accountant of Singapore. He was previously a co-founder of an accounting firm which he helped build to become the 14th largest accounting firm in Singapore. Having begun his career at Ernst & Young, his area of expertise includes audits, due diligence reviews and business valuations for listed and non-listed companies, in a diverse range of industries including aviation, manufacturing, trading, energy, large charities and non-profit organisations, e-commerce and fintech, property development and investment holdings.</p>
+</div>
+
+<div id="brandon" class="white-popup big-popup mfp-hide sans">
+  <h2>Brandon Lee</h2>
+  <h3>Country Manager (Korea)</h3>
+  <br><br>
+  <p>With many years of experience as a data scientist across industries and corporations such as Samsung and Siemens, Brandon excels in optimisation and improvisation of all processes. Prior to starting his own digital analytics company, SmartMind Inc, he was serving as the Vice President / Senior Data Scientist at Mediacorp Pte Ltd, the largest media business in Singapore. A sociable and quick-witted leader, Brandon breaks the stereotypes of a data scientist - channeling casual conversations into observations while combining his expertise to elevate and improve business processes with his findings.</p>
+</div>
+
+<div id="coco" class="white-popup big-popup mfp-hide sans">
+  <h2>Coco Ong</h2>
+  <h3>Marketing Chief</h3>
+  <br><br>
+  <p>With experience in handling and facilitating events since her undergraduate days, Coco started her career at GaiGai Pte Ltd, the fastest growing dating agency in Singapore, leading an events team and has since organised, marketed and executed over 100 events to date. The Love @ S.E.A.A. event was also featured in a variety show on Mediacorp, a Singaporean broadcasting station in 2017. Moving into content marketing at Paktor Pte Ltd, Coco managed digital content and traditional marketing for the company, as well as influencer marketing which managed to achieve a low CPL comparable to programmatic advertising. Prior to this, Coco graduated from NTU with a Bachelor of Fine Arts in Photography and Digital Imaging.</p>
+</div>
+
+<div id="jonas" class="white-popup big-popup mfp-hide sans">
+  <h2>Jonas Larsson</h2>
+  <h3>Project Manager</h3>
+  <br><br>
+  <p>Jonas has over 3 years experience in client facing roles as well as in blockchain and cryptocurrency since Bitcoin’s early days.</p>
+  <br>
+  <p>Previously an Account Director at Black Marketing, he specialised in maximising international C-level clients personal branding, presence, and company brand on LinkedIn. Prior to this, he held a role of an Associate Engineer at TÜV SÜD PSB working in the Electrical & Electronics engineering field. Jonas graduated from RMIT University with Bachelor of Business in Marketing.</p>
+</div>
+
+<div id="kim" class="white-popup big-popup mfp-hide sans">
+  <h2>Kim Chang</h2>
+  <h3>Project Manager</h3>
+  <br><br>
+  <p>She doesn't follow rules but follows dreams. Graduated from NUS with an atypical bachelor degree with honours in Theatre Studies, Kimberley thrives on the imaginative, the dynamic and occasionally the unorthodox. Helming projects and a few years of work dealing with the front end in the service industry has led her to emphasize soft skills in effective communication both as a leader and a teamplayer. She also makes a habit of being efficient and delivering set objectives, sometimes before you expect it.</p>
+</div>
+
+<div id="amanda" class="white-popup big-popup mfp-hide sans">
+  <h2>Amanda</h2>
+  <h3>Marketing Executive</h3>
+  <br><br>
+  <p>She started out her career in human resources and talent acquisitions in multiple MNCs like Deloitte, KPMG and Cycle & Carriage. After a few years, she decided it's time to pursue her interest in communications. She doesn't like to be restricted by rules and prefers to be in the background, quietly observing. Currently doing a double degree in Journalism and Public Relations has helped in her writing skills. She would rather be sipping coffee in a quiet cafe on any given day.</p>
+</div>
+
+<div id="victor" class="white-popup big-popup mfp-hide sans">
+  <h2>Victor Chow</h2>
+  <h3>Chief Investment Officer</h3>
+  <br><br>
+  <p>Victor Chow is a serial entrepreneur and senior corporate leader with over 28 years’ experience working in venture capital, start-ups, telecommunications, ICT, cryptofunds, financial & blockchain technologies, and most recently turned business investor. As Novum's Chief Investment Officer, he is responsible for deal-sourcing, M&A activities and investments. Victor has held C-level positions across general management, strategic planning, business development, sales, marketing and global operations management in Asia Pacific, Europe and North America. He was previously the Founding CEO of Singapore-based Fintech Accelerator INSPIRASIA and was Head of Asia for Life.SREDA VC Fintech-focused fund. He was most renowned in the IT industry for his contributions as the Global Chief Operating Officer COO for Cloud Computing and NextGen Data Centers of Huawei Technologies, a leading global information and communications technology company based in Shen Zhen China. Currently, Victor is also the Venture Partner of Fatfish Blockchain Limited - an ASX listed technology venture builder and Founder of ICOWorld Exchange and Senior Advisor to the International Decentralized Association of Cryptocurrency and Blockchains (IDACB).</p>
+</div>
+<!---------- Team popup end ------------>
+
+<!---------- Career popup ------------> 
+<div id="blockchaindev" class="white-popup careers-popup mfp-hide sans">
+  <h3>Blockchain Developer</h3>
+  <br><br>
+  <p class="bold white-text">Requirements:</p>
+  <br><br>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Possess at least 1 year of Solidity™ development experience.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Ability to solve computational problems using the most efficient algorithms.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Minimum Bachelor’s Degree in Computing or Computer Science or equivalent.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Experience in other blockchain technologies will be a bonus.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Good grasp of object oriented programming.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Ability to work independently without supervision.</p>
+    </li>
+  </ul>
+</div>
+
+<div id="consultant" class="white-popup careers-popup mfp-hide sans">
+  <h3>Consultant</h3>
+  <br><br>
+  <p class="bold white-text">Requirements:</p>
+  <br><br>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Possess at least 2 years of work experience in business development role.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Passionate about blockchain technologies.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Ability to deliver above and beyond customers’ expectations.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Graduate from a good university with excellent academic achievements.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Good interpersonal skill set.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Meticulous and team player.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+      <p>Ability to work independently without supervision.</p>
+    </li>
+  </ul>
+</div>
+<!---------- Career popup end ------------> 
+
+<!---------- Popup form content ------------> 
+<div id="" class="white-popup mfp-hide sans">
+  <div class="h-title"><h1>Participate</h1></div>
+  <br><br>
+  <div class="participate-messages"></div>
+  <form id='participate' class="ajax-participate" action='mailer.php' method='post' accept-charset='UTF-8'>
+    <input type='hidden' name='submitted' id='submitted' value='1'/>
+    <input type="hidden" name="type" value="participate" />
+    <input type='text' class="input-style" name='name' id='participate_name'  placeholder="Name" />
+    <br>
+    <input type='text' class="input-style" name='email' id='participate_email' placeholder="email address" />
+    <br><br>
+    <button type='submit' value='Submit' class="btn" style="float:right;">Participate</button>
+    <div style="clear:both;"></div>
+  </form>
+</div>
+<!---------- Popup form content end ------------> 
+
+<!---------- Cookies ------------> 
+<div id="cookies" class="white-popup mfp-hide sans">
+  <h3>Cookies Law</h3>
+  <br><br>
+  <p>This website uses cookies to ensure you get the best experience on our website. By continuing to browse the site you are agreeing to this policy, you consent to our use of cookies.</p>
+  <br><br>
+  <a href="#" class="btn">OK</a>
+</div>
+<!---------- Cookies ------------> 
+  
+
+<!-- Add smooth transition menu --> 
+<script>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+</script> 
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 3500
+        });
+    });
+
+    $(document).ready(function () {
+        $('.news-slider').flexslider({
+            animation: 'slide',
+            slideshow: false,
+            controlsContainer: '.news-slider',
+			slideshowSpeed: 000
+        });
+    });
+	
+</script>
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+<!-- Animate element -->
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<!-- Careers tab -->
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/filter.js"></script>
+
+<!-- Hover effect -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var tiltSettings = [
+			{},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 10, y: 10, z: 30},
+						rotation : {x: 0, y: -10, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					lines : {
+						translation : {x: 10, y: 10, z: [0,70]},
+						rotation : {x: 0, y: 0, z: -2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 10, y: -10, z: 0},
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					},
+					caption : {
+						translation : {x: 30, y: 30, z: [0,40]},
+						rotation : {x: [0,15], y: 0, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 10, y: 10, z: [0,20]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 5, y: -5, z: 0},
+						rotation : {x: 0, y: 0, z: 6},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuad'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 0, y: -8, z: 0},
+						rotation : {x: 3, y: 3, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					lines : {
+						translation : {x: 15, y: 15, z: [0,15]},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 0, y: 8, z: 0},
+						reverseAnimation : {duration : 600, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 10, y: -15, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: -5, y: 5, z: 0},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 15, y: 15, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic', elasticity : 700}
+					},
+					overlay : {
+						translation : {x: 15, y: -15, z: 0},
+						reverseAnimation : {duration : 500,easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 500, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 5, y: 5, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					},
+					caption : {
+						translation : {x: 10, y: 10, z: [0,50]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: 40, y: 40, z: 0},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						rotation : {x: 0, y: 0, z: -5},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: -30, y: -30, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					}
+				}
+			}];
+
+			function init() {
+				var idx = 0;
+				[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+					idx = pos%2 === 0 ? idx+1 : idx;
+					new TiltFx(el, tiltSettings[idx-1]);
+				});
+			}
+
+			// Preload all images.
+			imagesLoaded(document.querySelector('main'), function() {
+				document.body.classList.remove('loading');
+				init();
+			});
+
+			// REMOVE THIS!
+			// For Demo purposes only. Prevent the click event.
+			[].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+				el.addEventListener('click', function(ev) { ev.preventDefault(); });
+			});
+
+			var pater = document.querySelector('.pater'),
+				paterSVG = pater.querySelector('.pater__svg'),
+				pathEl = paterSVG.querySelector('path'),
+				paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+
+			pater.addEventListener('mouseenter', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.active,
+					duration: 400,
+					easing: 'easeOutQuad'
+				});
+			});
+
+			pater.addEventListener('mouseleave', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.default,
+					duration: 400,
+					easing: 'easeOutExpo'
+				});
+			});
+		})();
+    </script>
+  
+
+
+</body>
+</html>

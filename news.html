@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novum Capital - News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="component.css" />
+    <link rel="stylesheet" href="filter.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+
+.white-popup {
+	position: relative;
+  background-color: #1e222b;
+	width: auto;
+	max-width: 555px;
+	margin: 25px auto;
+  padding: 50px 25px 120px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.white-popup .btn {
+  color:#000;
+  font-weight: 700;
+}
+
+.big-popup {
+  max-width: 945px;
+	padding-bottom: 170px;
+	background: url(img/bg-bottom-popup-big.jpg) #1e222b center bottom no-repeat;
+  background-size:100%;
+}
+
+.big-popup img {
+  max-width: 750px;
+}
+
+.careers-popup {text-align: left;}
+
+.white-popup h2 {color:#00f5ff;}
+
+.mfp-bg {
+	background: #000000;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #00f5ff;
+  top:10px;
+  right:10px;
+}
+.mfp-close {
+	font-size: 36px;
+}
+
+.flexslider .slides img {display: inline-block;}
+
+</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+  
+<!------------ Navigation start ------------>
+<header>
+    <a href="index.html"><div id="logo"></div></a>
+    <ul class="social">
+      <li>
+        <div class="dropdown">
+          <i class="fa fa-globe" style="font-size:14px;"></i> &nbsp;EN &nbsp;<i class="fa fa-chevron-down chevron-pos"></i>
+          <div class="dropdown-content">
+            <p><a href="index-zh.html">Chinese</a></p>
+            <p><a href="index-kr.html">Korean</a></p>
+          </div>
+        </div>
+      </li>
+      <li><a href="https://instagram.com/novumcapital" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://facebook.com/novumcapital" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/novumcapital" target="_blank"><i class="fa fa-twitter"></a></i></li>
+    </ul>
+    <ul id="menu">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Our Projects</a></li>
+      <li><a href="index.html#services">Our Services</a></li>
+      <li><a href="index.html#news">News</a></li>
+      <li><a href="index.html#team">The Novum Edge</a></li>
+      <li><a href="index.html#careers">Careers</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <a href="index.html#about" onclick="closeSidebar(this)">About</a>
+      <a href="index.html#projects" onclick="closeSidebar(this)">Our Projects</a>
+      <a href="index.html#services" onclick="closeSidebar(this)">Our Services</a>
+      <a href="index.html#news" onclick="closeSidebar(this)">News</a>
+      <a href="index.html#team" onclick="closeSidebar(this)">The Novum Edge</a>
+      <a href="index.html#careers" onclick="closeSidebar(this)">Careers</a>
+      <a href="index.html#contact" onclick="closeSidebar(this)">Contact</a>
+      <a></a>
+      <div class="dropdown lng-mobile">
+        EN &nbsp;<i class="fa fa-chevron-down chevron-pos"></i>
+        <div class="dropdown-content">
+          <p><a href="index-zh.html">Chinese</a></p>
+          <p><a href="index-kr.html">Korean</a></p>
+        </div>
+      </div>
+      <div class="social-mobile">
+        <ul>
+          <li><a href="https://instagram.com/novumcapital" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://facebook.com/novumcapital" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/novumcapital" target="_blank"><i class="fa fa-twitter"></a></i></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<!------------ Navigation end ------------>
+
+<!------------ News start ------------>
+<section id="news2" style="overflow:hidden;">
+  <div class="services-bg"></div>
+  <main>
+  <div class="container" style="position:relative; z-index: 300;">
+    <div class="h-line"></div>
+    <span class="small-font">Whats on</span>
+    <br><br><br>
+    <h2>News</h2>
+    <div class="updates-title mobile-dis"><img src="img/text-updates.png" alt=""></div>
+    <br><br><br>
+		<div class="row wow fadeInUp">
+				<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+					<a href="#news-irwin" class="tilter tilter--6 titler-custom open-popup-link">
+						<figure class="tilter__figure">
+							<div class="news-info">
+								<p>Oct 14 2018</p>
+								<br>
+								<h3>Novum Capital Shares Venture Capital Insights on Blockchain Investments in Jakarta</h3>
+							</div>
+							<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+							<svg class="tilter__deco tilter__deco--lines news-bg news-irwin" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+					<a href="#news-coinjax" class="tilter tilter--6 titler-custom open-popup-link">
+						<figure class="tilter__figure">
+							<div class="news-info">
+								<p>Oct 2018</p>
+								<br>
+								<h3>High-tech Crypto Exchange, Coinjax, Raises Seed Round With Novum Capital</h3>
+							</div>
+							<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+							<svg class="tilter__deco tilter__deco--lines news-bg news-coinjax" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+					</a>
+				</div>
+			</div>
+      <br><br>
+			<div class="row wow fadeInUp">
+					<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+						<a href="#news-cm" class="tilter tilter--6 titler-custom open-popup-link">
+							<figure class="tilter__figure">
+								<div class="news-info">
+									<p>Aug 2018</p>
+									<br>
+									<h3>Cloudmoolah Hits US$15 Million Raise</h3>
+								</div>
+								<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+								<svg class="tilter__deco tilter__deco--lines news-bg news-cm" viewBox="0 0 300 415">
+									<path d="M20.5,20.5h260v375h-260V20.5z" />
+								</svg>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+						<a href="#news-consentium" class="tilter tilter--6 titler-custom open-popup-link">
+							<figure class="tilter__figure">
+								<div class="news-info">
+									<p>May 2018</p>
+									<br>
+									<h3>Consentium Succesfully Raises US$42 Million</h3>
+								</div>
+								<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+								<svg class="tilter__deco tilter__deco--lines news-bg news-consentium" viewBox="0 0 300 415">
+									<path d="M20.5,20.5h260v375h-260V20.5z" />
+								</svg>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<br><br>
+				<div class="row wow fadeInUp">
+						<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+							<a href="#news-kualalumpur" class="tilter tilter--6 titler-custom open-popup-link">
+								<figure class="tilter__figure">
+									<div class="news-info">
+										<p>Mar 19, 2018</p>
+										<br>
+										<h3>Market Expansion Prompts Novum Capital to Set Up Second Office in Malaysia</h3>
+									</div>
+									<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+									<svg class="tilter__deco tilter__deco--lines news-bg news-kualalumpur" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+							<a href="#news-megax" class="tilter tilter--6 titler-custom open-popup-link">
+								<figure class="tilter__figure">
+									<div class="news-info">
+										<p>May 2018</p>
+										<br>
+										<h3>Consentium Succesfully Raises US$42 Million</h3>
+									</div>
+									<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+									<svg class="tilter__deco tilter__deco--lines news-bg news-megax" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<div class="row wow fadeInUp">
+						<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+							<a href="#news-nizam" class="tilter tilter--6 titler-custom open-popup-link">
+								<figure class="tilter__figure">
+									<div class="news-info">
+										<p>Oct 7, 2017</p>
+										<br>
+										<h3>Novum Capital Welcomes Leading Crypto Legal Professional, Nizam Ismail, to its Team</h3>
+									</div>
+									<div class="news-btn"><i class="fa fa-long-arrow-right"></i></div>
+									<svg class="tilter__deco tilter__deco--lines news-bg news-nizam" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-6 col-sm-12 col-12 v-pad news-pad">
+
+						</div>
+					</div>
+  </div>
+</main>
+</section>
+<!------------ News end ------------>
+
+<footer>
+  <div class="container">
+    <div id="footer-bg"></div>
+    <p class="small-font" style="position:relative; z-index:200;">© 2018 Novum Capital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!---------- Subscribe  ------------> 
+<div class="subscription">
+  <a href="#subscribe" class="subscribe-btn open-popup-link">Subscribe &nbsp;<i class="fa fa-paper-plane"></i></a>
+</div>
+
+<div id="subscribe" class="white-popup mfp-hide sans" style="text-align:center;">
+  <h3>Subscribe for our Mailing List</h3>
+  <br><br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus sed purus varius luctus. Quisque egestas mi nec mattis tristique. Cras pellentesque mollis elit, vel efficitur lacus tempus id.</p>
+  <br><br><br>
+  <input type='text' class="input-style"  placeholder="NAME"/>
+  <br><br><br>
+  <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS"/>
+  <br><br><br>
+  <button type='submit' value='Submit' class="btn">Submit</button>
+</div>
+<!---------- Subscribe end ------------>
+
+
+<!---------- News popup ------------> 
+<div id="news-irwin" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-irwin.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL SHARES VENTURE CAPITAL INSIGHTS ON BLOCKCHAIN INVESTMENTS IN JAKARTA</h3>
+  <br><br>
+  <p>Early this month, Novum Capital was at the Blockchain Asia Forum 2018: Blockchain Applications and Economics Indonesia Forum in Jakarta. Irwin Chee, Managing Consultant of Novum Capital, was the panelist on the main conference day.</p>
+  <br>
+  <p>During the panel discussion, Chee shared insights on venture capital valuation on blockchain investments with the forum’s 300 attendees which comprised of government officials, funds and blockchain projects. The number and variety of attendees reflect the growing interest in blockchain technology, as well as the cumulative efforts of crypto enthusiasts coming together to find ways in promoting mass adoption for blockchain technology.</p>
+</div>
+
+<div id="news-coinjax" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-coinjax.jpg" alt="">
+  <br><br><br>
+  <h3>HIGH-TECH CRYPTO EXCHANGE, COINJAX, RAISES SEED ROUND WITH NOVUM CAPITAL</h3>
+  <br><br>
+  <p>Novum participates in CoinJax seed round and partners strategically with the exchange going forward. CoinJax is an international high-tech cryptocurrency exchange, built from ground up with the emphasis of scalability and security. CoinJax employs the latest proprietary security techniques and best industry practice. All funds are stored in cold wallets, with a multi-sig process to ensure strong corporate governance and compliance.</p>
+</div>
+
+<div id="news-cm" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-cm.jpg" alt="">
+  <br><br><br>
+  <h3>CLOUDMOOLAH HITS US$15 MILLION RAISE</h3>
+  <br><br>
+  <p>Following a successful US$15 million Token Sale in April 2018, Cloud Alliance’s (commonly known as CloudMoolah) MOO Token (XMOO) has successfully listed on Coinsuper as its first exchange. Cloud Alliance’s flagship product, CloudMoolah, is a payment aggregator integrated within the Unity Technologies’ game development software and is offered alongside other in-app-purchase (IAP) products from technology giants such as Apple, Google, Amazon, Facebook, Xiaomi and Samsung. CloudMoolah allows Unity developers to enable in-app revenue collection from more than 500,000 retail point of sales across Southeast Asia where the average credit card penetration rate is less than 3%.</p>
+</div>
+
+<div id="news-consentium" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-consentium.jpg" alt="">
+  <br><br><br>
+  <h3>CONSENTIUM SUCCESSFULLY RAISES US$42 MILLION</h3>
+  <br><br>
+  <p>Consentium sells out USD42M offering in token sales. Consentium allows peer-to-peer (P2P), multi-digital-currency transfers between users. The fintech platform also offers a transactional fee redistribution programme as an incentive to create and cultivate strong in-app communities. Consentium uses a reward system based on creation of quality community groups, comprising both amount of users and on-app reputation of users.</p>
+</div>
+
+<div id="news-kualalumpur" class="white-popup big-popup mfp-hide sans">
+  <img src="img/news-kualalumpur.jpg" alt="">
+  <br><br><br>
+  <h3>MARKET EXPANSION PROMPTS NOVUM CAPITAL TO SET UP SECOND OFFICE IN MALAYSIA</h3>
+  <br><br>
+  <p>Novum Capital, one of Southeast Asia’s leading blockchain consultancy firms, announces its expansion into Malaysia. This expansion allows Novum Capital to better serve its Malaysia-based clientele. The move into Kuala Lumpur was prompted by its ongoing projects in the country. Currently, Novum Capital has two ongoing projects and expects to have a client base in Malaysia in the foreseeable future. This rising demand is a clear indication of companies wanting to fundraise through the blockchain.</p>
+</div>
+
+<div id="news-megax" class="white-popup big-popup mfp-hide sans">
+  <img src="img/blog-megax.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL SUCCESSFULLY CLOSES MEGAX, A RETAIL BASED TOKEN GENERATION EVENT</h3>
+  <br><br>
+  <p>iFashionGroup today successfully completes its TGE for the MegaX tokens. More than Three Million Singapore Dollars were raised in this TGE. The Novum Capital team assisted throughout the TGE process and was responsible for deploying highly secure token generation software and conducting Know-Your-Customer diligence in order to ensure a safe and compliant TGE process.</p>
+</div>
+
+<div id="news-nizam" class="white-popup big-popup mfp-hide sans">
+  <img src="img/blog-nizam.jpg" alt="">
+  <br><br><br>
+  <h3>NOVUM CAPITAL WELCOMES LEADING CRYPTO LEGAL PROFESSIONAL, NIZAM ISMAIL, TO ITS TEAM</h3>
+  <br><br>
+  <p>Novum Capital is proud to welcome Mr Nizam Ismail to the team. Mr Ismail is a Co-Founder of RHT Compliance solutions and previously was a Deputy Director and Head of the Market Conduct Policy Division of the Monetary Authority of Singapore. Mr Ismail's skillset complements the existing founding team members and will provide immense value add to Novum Capital's clients.</p>
+</div>
+<!---------- News popup end ------------>
+
+
+<!---------- Cookies ------------> 
+<div id="cookies" class="white-popup mfp-hide sans">
+  <h3>Cookies Law</h3>
+  <br><br>
+  <p>This website uses cookies to ensure you get the best experience on our website. By continuing to browse the site you are agreeing to this policy, you consent to our use of cookies.</p>
+  <br><br>
+  <a href="#" class="btn">OK</a>
+</div>
+<!---------- Cookies ------------> 
+  
+
+<!-- Add smooth transition menu --> 
+<script>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+</script> 
+
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+<!-- Animate element -->
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<!-- Hover effect -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var tiltSettings = [
+			{},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 10, y: 10, z: 30},
+						rotation : {x: 0, y: -10, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					lines : {
+						translation : {x: 10, y: 10, z: [0,70]},
+						rotation : {x: 0, y: 0, z: -2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 10, y: -10, z: 0},
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					},
+					caption : {
+						translation : {x: 30, y: 30, z: [0,40]},
+						rotation : {x: [0,15], y: 0, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 10, y: 10, z: [0,20]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 5, y: -5, z: 0},
+						rotation : {x: 0, y: 0, z: 6},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuad'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 0, y: -8, z: 0},
+						rotation : {x: 3, y: 3, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					lines : {
+						translation : {x: 15, y: 15, z: [0,15]},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 0, y: 8, z: 0},
+						reverseAnimation : {duration : 600, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 10, y: -15, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: -5, y: 5, z: 0},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 15, y: 15, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic', elasticity : 700}
+					},
+					overlay : {
+						translation : {x: 15, y: -15, z: 0},
+						reverseAnimation : {duration : 500,easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 500, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 5, y: 5, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					},
+					caption : {
+						translation : {x: 10, y: 10, z: [0,50]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: 40, y: 40, z: 0},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						rotation : {x: 0, y: 0, z: -5},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: -30, y: -30, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					}
+				}
+			}];
+
+			function init() {
+				var idx = 0;
+				[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+					idx = pos%2 === 0 ? idx+1 : idx;
+					new TiltFx(el, tiltSettings[idx-1]);
+				});
+			}
+
+			// Preload all images.
+			imagesLoaded(document.querySelector('main'), function() {
+				document.body.classList.remove('loading');
+				init();
+			});
+
+			// REMOVE THIS!
+			// For Demo purposes only. Prevent the click event.
+			[].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+				el.addEventListener('click', function(ev) { ev.preventDefault(); });
+			});
+
+			var pater = document.querySelector('.pater'),
+				paterSVG = pater.querySelector('.pater__svg'),
+				pathEl = paterSVG.querySelector('path'),
+				paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+
+			pater.addEventListener('mouseenter', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.active,
+					duration: 400,
+					easing: 'easeOutQuad'
+				});
+			});
+
+			pater.addEventListener('mouseleave', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.default,
+					duration: 400,
+					easing: 'easeOutExpo'
+				});
+			});
+		})();
+    </script>
+  
+
+
+</body>
+</html>
