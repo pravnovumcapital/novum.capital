@@ -760,31 +760,38 @@
 <!---------- Subscribe end ------------>
 
 <!---------- Contact popup start ------------>
-<div id="contactus" class="white-popup mfp-hide sans" style="text-align:center;">
-  <h3>Make an Appointment</h3>
-  <br><br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus sed purus varius luctus. Quisque egestas mi nec mattis tristique. Cras pellentesque mollis elit, vel efficitur lacus tempus id.</p>
-  <br>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="NAME"/>
-  </div>
-  <div class="v-pad">
-    <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS"/>
-  </div>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="COMPANY NAME"/>
-  </div>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="CONTACT NO"/>
-  </div>
-  <div class="v-pad">
-    <textarea class="input-style" placeholder="HOW CAN WE HELP?"></textarea>
-  </div>
-  <p>By submitting this form, you agree to allow Novum Capital to contact you for future and ongoing communications by email.</p>
-  <div class="v-pad">
-    <button type='submit' value='Submit' class="btn">Submit</button>
-  </div>
-</div>
+<form action="mail.php" method="POST" id="contactForm">
+    <div id="contactus" class="white-popup mfp-hide sans" style="text-align:center;">
+      <h3>Make an Appointment</h3>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus sed purus varius luctus. Quisque egestas mi nec mattis tristique. Cras pellentesque mollis elit, vel efficitur lacus tempus id.</p>
+      <br>
+      <div class="v-pad inputDiv">
+        <input type='text' class="input-style"  placeholder="NAME" id="contact_name" name="name"/>
+        <span class="errorMsg"></span>
+      </div>
+      <div class="v-pad inputDiv">
+        <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS" id="contact_email" name="email"/>
+        <span class="errorMsg"></span>
+      </div>
+      <div class="v-pad inputDiv">
+        <input type='text' class="input-style"  placeholder="COMPANY NAME" id="contact_company" name="company"/>
+        <span class="errorMsg"></span>
+      </div>
+      <div class="v-pad inputDiv">
+        <input type='text' class="input-style"  placeholder="CONTACT NO" id="contact_number" name="number"/>
+        <span class="errorMsg"></span>
+      </div>
+      <div class="v-pad inputDiv">
+        <textarea class="input-style" placeholder="HOW CAN WE HELP?" id="contact_helptext" name="helptext"></textarea>
+        <span class="errorMsg"></span>
+      </div>
+      <p>By submitting this form, you agree to allow Novum Capital to contact you for future and ongoing communications by email.</p>
+      <div class="v-pad">
+        <button  value='Submit' class="btn" onclick="makeAppointment()">Submit</button>
+      </div>
+    </div>
+    </form>
 <!---------- Contact popup end ------------>
 
 <!---------- Projects popup ------------> 
@@ -1144,7 +1151,56 @@ $(function() {
 		
     });
 </script>
+<script>
+  
+  //   $(document).ready(function(){
+  //     alert('dasdasd')
+  //     $("#contactForm").submit(function(e) {
+  //        // avoid to execute the actual submit of the form.
+  // });
+  //   });
 
+    function makeAppointment(){
+        var form = $('#contactForm');
+        var url = form.attr('action');
+        var error = 0;
+        $('.errorMsg').html('');
+        if($('#contact_name').val() == '')
+        {
+          $('#contact_name').closest('.inputDiv').find('.errorMsg').html('Name should not be empty.');
+          error = 1;
+        }
+        if($('#contact_email').val() == '')
+        {
+          $('#contact_email').closest('.inputDiv').find('.errorMsg').html('Email should not be empty.');
+          error = 1;
+        }
+        if($('#contact_company').val() == '')
+        {
+          $('#contact_company').closest('.inputDiv').find('.errorMsg').html('Company Name should not be empty.');
+          error = 1;
+        }
+        if($('#contact_number').val() == '')
+        {
+          $('#contact_number').closest('.inputDiv').find('.errorMsg').html('Contact No should not be empty.');
+          error = 1;
+        }
+        if(error == 1)
+        return false;
+        $.ajax({
+              type: "POST",
+              url: url,
+              data: form.serialize(), // serializes the form's elements.
+              success: function(data)
+              {
+                  alert(data); // show response from the php script.
+                  $("#contactForm").find("input[type=text], textarea").val("");
+              }
+            });
+  
+        e.preventDefault();
+    }
+  </script>
 <!-- Animate element -->
 <script src="js/wow.js"></script>
 <script>
@@ -1363,7 +1419,17 @@ new WOW().init();
 			});
 		})();
     </script>
-  
+  <style>
+  .errorMsg{
+    position: absolute;
+    color: red;
+    left: 80px;
+    bottom: -4px;
+  }
+  .inputDiv{
+    position: relative;
+  }
+  </style>
 
 
 </body>
