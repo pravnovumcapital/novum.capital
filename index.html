@@ -1217,6 +1217,7 @@ $(function() {
               data: form.serialize(), // serializes the form's elements.
               success: function(data)
               {
+                  form.reset();
                   alert(data); // show response from the php script.
                   $("#contactForm").find("input[type=text], textarea").val("");
               }
