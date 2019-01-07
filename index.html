@@ -1185,10 +1185,12 @@ $(function() {
   //   });
 
     function makeAppointment(){
+      
         var form = $('#contactForm');
         var url = form.attr('action');
         var error = 0;
         $('.errorMsg').html('');
+        var inputs = ['contact_name','contact_email','contact_company','contact_number','contact_helptext'];
         if($('#contact_name').val() == '')
         {
           $('#contact_name').closest('.inputDiv').find('.errorMsg').html('Name should not be empty.');
@@ -1209,6 +1211,7 @@ $(function() {
           $('#contact_number').closest('.inputDiv').find('.errorMsg').html('Contact No should not be empty.');
           error = 1;
         }
+        //$.magnificPopup.close()
         if(error == 1)
         return false;
         $.ajax({
@@ -1218,8 +1221,12 @@ $(function() {
               success: function(data)
               {
                   alert(data); // show response from the php script.
-                  $("#contactForm").find("input[type=text], textarea").val("");
+                  //$("#contactForm").find("input[type=text], textarea").val("");
+                  $.magnificPopup.close();
               }
+            });
+            inputs.forEach(function(item, index){
+              $('#'+item).val('');
             });
             $('#contactForm')[0].reset();
         //e.preventDefault();
