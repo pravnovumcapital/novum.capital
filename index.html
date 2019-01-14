@@ -770,7 +770,7 @@
 <!---------- Subscribe end ------------>
 
 <!---------- Contact popup start ------------>
-<form action="mail.php" method="POST" id="contactForm">
+<form  id="contactForm" name="contactForm" action="mail.php">
     <div id="contactus" class="white-popup mfp-hide sans" style="text-align:center;">
       <h3>Make an Appointment</h3>
       <br><br>
@@ -778,15 +778,15 @@
           Talk to us today! We will get back to you within 48 hours.</p>
       <br>
       <div class="v-pad inputDiv">
-        <input type='text' class="input-style"  placeholder="NAME" id="contact_name" name="name"/>
+        <input type="text" class="input-style"  placeholder="NAME" id="contact_name" name="name" value=""/>
         <span class="errorMsg"></span>
       </div>
       <div class="v-pad inputDiv">
-        <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS" id="contact_email" name="email"/>
+        <input type="email" class="input-style"  placeholder="YOUR EMAIL ADDRESS" id="contact_email" name="email" value=""/>
         <span class="errorMsg"></span>
       </div>
       <div class="v-pad inputDiv">
-        <input type='text' class="input-style"  placeholder="COMPANY NAME" id="contact_company" name="company"/>
+        <input type='text' class="input-style"  placeholder="COMPANY NAME" id="contact_company" name="company" value=""/>
         <span class="errorMsg"></span>
       </div>
       <div class="v-pad inputDiv">
@@ -803,32 +803,6 @@
       </div>
     </div>
     </form>
-<div id="contactus" class="white-popup mfp-hide sans" style="text-align:center;">
-  <h3>Make an Appointment</h3>
-  <br><br>
-  <p>Want to raise funds through an ICO/STO or engage us for technology consulting in the areas of blockchain?
-    Talk to us today! We will get back to you within 48 hours.</p>
-  <br>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="NAME"/>
-  </div>
-  <div class="v-pad">
-    <input type='email' class="input-style"  placeholder="YOUR EMAIL ADDRESS"/>
-  </div>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="COMPANY NAME"/>
-  </div>
-  <div class="v-pad">
-    <input type='text' class="input-style"  placeholder="CONTACT NO"/>
-  </div>
-  <div class="v-pad">
-    <textarea class="input-style" placeholder="HOW CAN WE HELP?"></textarea>
-  </div>
-  <p>By submitting this form, you agree to allow Novum Capital to contact you for future and ongoing communications by email.</p>
-  <div class="v-pad">
-    <button type='submit' value='Submit' class="btn">Submit</button>
-  </div>
-</div>
 <!---------- Contact popup end ------------>
 
 <!---------- Projects popup ------------> 
@@ -1199,16 +1173,12 @@ $(function() {
 </script>
 <script>
   
-  //   $(document).ready(function(){
-  //     alert('dasdasd')
-  //     $("#contactForm").submit(function(e) {
-  //        // avoid to execute the actual submit of the form.
-  // });
-  //   });
-
     function makeAppointment(){
       
         var form = $('#contactForm');
+        //console.log('Here');
+        console.log($('#contactForm').serialize());
+        
         var url = form.attr('action');
         var error = 0;
         $('.errorMsg').html('');
@@ -1236,14 +1206,21 @@ $(function() {
         //$.magnificPopup.close()
         if(error == 1)
         return false;
+        var postData = {
+          name:$('#contact_name').val(),
+          email:$('#contact_email').val(),
+          company:$('#contact_company').val(),
+          number:$('#contact_number').val(),
+          message:$('#contact_helptext').val()
+        };
         $.ajax({
               type: "POST",
               url: url,
-              data: form.serialize(), // serializes the form's elements.
+              data: postData, // serializes the form's elements.
               success: function(data)
               {
                   alert(data); // show response from the php script.
-                  //$("#contactForm").find("input[type=text], textarea").val("");
+                  $("#contactForm").find("input[type=text], textarea").val("");
                   $.magnificPopup.close();
               }
             });
